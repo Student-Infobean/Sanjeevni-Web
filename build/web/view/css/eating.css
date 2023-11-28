@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h4{
+    color: black;
+}
+.feedback-option:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

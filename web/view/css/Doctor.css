@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+  
+}
+#header1{
+    width: 100%;
+    height: 100px;
+    
+}
+#header1 img{
+    width: 29%;
+    height: 100%;
+    
+    float: left;
+}
+#search{
+    width: 450px;
+    height: 40px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-color:dodgerblue;
+    padding-left: 10px;
+}
+#searchbtn{
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: white;
+    border-color: dodgerblue;
+}
+#header1 ul{
+  
+    margin-top: 38px;
+    float: left;
+    margin-left: 30px;
+
+}
+#header1 ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 25px;
+}
+#header1 ul li a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+#menu{
+    width: 100%;
+    height: 40px;
+   padding-top: 10px;
+    background-color: #0077B6;
+}
+#menu ul{
+    
+    margin-left: 50px;
+}
+#menu ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+#content{
+    width: 100%;
+    min-height: 500px;
+}
+#section1{
+    height: 350px;
+   
+    
+}
+#content1{
+    width: 45%;
+    height: 100%;
+    margin-left: 30px;
+   
+    float: left;
+}
+#content1 h2{
+    margin-top: 80px;
+    margin-left: 30%
+}
+#content1 p{
+    margin-top: 20px;
+    margin-left: 29%;
+    font-size: 1.2rem;
+}
+#content1 div{
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 1.2rem;
+}
+#content1 button{
+    margin-top: 20px;
+    margin-left: 30%;
+    font-size: 1rem;
+    width: 200px;
+    height: 40px;
+    background-color:#00B4D8 ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#content1 button:hover{
+    color: #0077B6;
+    border:1px solid #0077B6;
+    background-color: white;
+}
+#image{
+    width: 45%;
+    height: 100%;
+  
+    float: right;
+    margin-top: 15px;
+}
+#image img{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#section2{
+    width: 100%;
+    min-height: 150px;
+    margin-top: 50px;
+}
+#section2 h2{
+    margin-left: 100px;
+}
+#section2 p{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#issues{
+    width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#circle{
+    width: 100px;
+    height: 100px;background-color: #8AD7F5;
+    border-radius: 50%;
+    padding: 12px;
+}
+#img1,#img2,#img3,#img4,#img5,#img6{
+    width: 15%;
+    min-height: 80%;
+    
+    margin-left: 10px;
+    float: left;
+}
+#img1 img,#img2 img,#img3 img,#img4 img,#img5 img,#img6 img{
+    width: 100%;
+    height: 100%;
+}
+#img1 div,#img2 div,#img3 div,#img4 div,#img5 div,#img6 div{
+    margin-left: 45px;
+    margin-top: 15px;
+    color: #1341A3;
+}
+#section3{
+    width: 100%;
+    height: 460px;
+   margin-top: 50px;
+}
+#doc{
+    width: 60%;
+    height: 100%;
+    
+    float: left;
+}
+#doc h1{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#doc p{
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 1.2rem;
+}
+#doc button{
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 30px;
+    background-color: #1341A3;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+#seth{
+    width: 39%;
+    height: 100%;
+  
+    float: left;
+    position: relative;
+}
+#seth img{
+    height: 100%;
+    
+}
+#doc1{
+    width: 240px;
+    height: 70px;
+    
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background-color: #E3EBEC;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#doc1 img,#doc2 img,#doc3 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 12px;
+    float: left;
+}
+#doc1 h4,#doc2 h4,#doc3 h4{
+    margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+}
+#doc1 p,#doc2 p,#doc3 p{
+    margin-left: 20px;
+    margin-top: 2px;
+    float: left;
+}
+#doc2{
+    width: 240px;
+    height: 70px;
+   
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    background-color: #E3EBEC;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#doc3{
+    width: 240px;
+    height: 70px;
+   
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    background-color: #E3EBEC;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#section4{
+    width: 100%;
+    height: 250px;
+   
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+#section4 h2{
+    margin-left: 44%;
+}
+#ans1,#ans{
+    width: 45%;
+    height: 180px;
+  
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #E4E8F1;
+    border-radius: 15px;
+}
+#sim{
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-radius: 15px;
+    background-color: #0077B6;
+}
+#ans1 p,#ans p{
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+}
+#ans h4,#ans1 h4{
+ 
+    margin-top: 55px;
+    margin-left: 120px;
+}
+ 
+#footer{
+    width: 100%;
+    height:400px;
+    background-color: #171B2A;
+    padding-top: 40px;
+}
+#box1,#box2,#box3,#box4{
+    width: 22%;
+    height: 90%;
+    
+    margin-left: 30px;
+    float: left;
+}
+#box1 img{
+    width: 100%;
+}
+#box1 p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#box1 i{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 0.7rem;
+    color: white;
+}
+#box2 h2,#box3 h2,#box4 h2{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: white;
+}
+#box2 p,#box3 p{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#box2 p a,#box3 p a{
+   
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+#box4 p{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: white;
+}
+#email{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 250px;
+    padding-left: 10px;
+    height:40px ;
+    
+}
+#sub{
+    margin-left: 50px;
+    height:40px ;
+    background-color: #009999;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: white;
+}
+#last{
+    width: 100%;
+    height: 60px;
+    background-color: #282B38;
+}
+#last p:nth-child(1){
+    float: left;
+    color: white;
+    margin-top: 15px;
+    margin-left: 50px
+}
+#last p:nth-child(2){
+    float: right;
+    color: white;
+    margin-top: 15px;
+    margin-right: 50px
+}

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 400px;
+    margin-left: 23px;
+}
+.cap{
+    text-decoration: none;
+    color: black;
+}
+.cap :hover h4{
+    text-decoration-line: underline;
+    color:yellow;
+}
+.card-body p{
+    text-transform: uppercase;
+}

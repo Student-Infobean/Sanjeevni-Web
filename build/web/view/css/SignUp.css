@@ -1,0 +1,269 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: "Poppins", sans-serif; */
+}
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background: rgb(130, 106, 251); */
+}
+#header1{
+  width: 100%;
+  height: 100px;
+  
+}
+#header1 img{
+  width: 29%;
+  height: 100%;
+  
+  float: left;
+}
+#search{
+  width: 450px;
+  height: 40px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 30px;
+  border-color:dodgerblue;
+  padding-left: 10px;
+}
+#searchbtn{
+  width: 50px;
+  height: 40px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: white;
+  border-color: dodgerblue;
+}
+#header1 ul{
+
+  margin-top: 38px;
+  float: left;
+  margin-left: 30px;
+
+}
+#header1 ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 25px;
+}
+#header1 ul li a{
+  text-decoration: none;
+  color: dodgerblue;
+}
+#menu{
+  width: 100%;
+  height: 40px;
+ padding-top: 10px;
+  background-color: #0077B6;
+}
+#menu ul{
+  
+  margin-left: 50px;
+}
+#menu ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+}
+#menu ul li a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+.container {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  /* margin-left: 300px; */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 40%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 300px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+
+  background: rgb(88, 56, 250);
+}
+#footer{
+  width: 100%;
+  height:400px;
+  background-color: #171B2A;
+  padding-top: 40px;
+}
+#box1,#box2,#box3,#box4{
+  width: 22%;
+  height: 90%;
+  
+  margin-left: 30px;
+  float: left;
+}
+#box1 img{
+  width: 100%;
+}
+#box1 p{
+  color: white;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+#box1 i{
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 0.7rem;
+  color: white;
+}
+#box2 h2,#box3 h2,#box4 h2{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: white;
+}
+#box2 p,#box3 p{
+  margin-left: 100px;
+  margin-top: 40px;
+}
+#box2 p a,#box3 p a{
+ 
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+#box4 p{
+  margin-left: 50px;
+  margin-top: 20px;
+  color: white;
+}
+#email{
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 250px;
+  padding-left: 10px;
+  height:40px ;
+  
+}
+#sub{
+  margin-left: 50px;
+  height:40px ;
+  background-color: #009999;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 7px;
+  color: white;
+}
+#last{
+  width: 100%;
+  height: 60px;
+  background-color: #282B38;
+}
+#last p:nth-child(1){
+  float: left;
+  color: white;
+  margin-top: 15px;
+  margin-left: 50px
+}
+#last p:nth-child(2){
+  float: right;
+  color: white;
+  margin-top: 15px;
+  margin-right: 50px
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
