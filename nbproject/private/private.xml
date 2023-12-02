@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>web/view/Lu12.jsp</url>
+            <bookmark id="1">
+                <name/>
+                <line>272</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Thise20.jsp</file>
@@ -15,9 +24,11 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Recipie6.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/k.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Recipie17.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdminCount.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index18.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Camp4.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/burns.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdmindashBoard.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu18.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/css/Coussel.html</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/snjvni16.jsp</file>
@@ -43,6 +54,7 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Anemia.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Additation_2.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/vit.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/CampaignViewDTO.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu15.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index11.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/HealthH.jsp</file>
@@ -97,6 +109,7 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Thise28.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu4.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index7.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdminLogin.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/vitB5.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Fibromyalgia.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index43.jsp</file>
@@ -170,6 +183,7 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/LowBp.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu5.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/vitB2.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/CampaignViewDAO.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Budget.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index44.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Recipie4.jsp</file>
@@ -189,6 +203,7 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index12.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/vitB12.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/B.html.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/CampaignView.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index20.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu1.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Aortic.jsp</file>
@@ -211,12 +226,14 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu17.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Acute_Renal.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/meditation1.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdminPage.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/L.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/BirthControl.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index2.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Provider.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/adhd_1.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/EarThroat.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/AdminLogin.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Lu8.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/index78.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Recipie8.jsp</file>

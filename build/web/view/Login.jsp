@@ -55,7 +55,7 @@
                   <a href="#">Forgot Password?</a>
                </div>
                <div class="field">
-                 /
+                    <input type="submit" onclick="validate()" value="LOGIN">
                </div>
             </form>
             <!-- <div class="login">

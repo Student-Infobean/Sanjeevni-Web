@@ -58,7 +58,7 @@
                                     href="Desktop.jsp">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link active text-white px-4" aria-current="page" href="HeathH.jsp">Health
+                                <a class="nav-link active text-white px-4" aria-current="page" href="HealthH.jsp">Health
                                     Awareness</a>
                             </li>
                             <li class="nav-item fw-bold">
@@ -278,11 +278,11 @@
                 </div>
                 <div class="col">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
-                    <p><a href="">BMI Calculator</a></p>
+                    <p><a href="">Weight Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
-                    <p><a href="">BMI Calculator</a></p>
+                    <p><a href="">Thyroid Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>

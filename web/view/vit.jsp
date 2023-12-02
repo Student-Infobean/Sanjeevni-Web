@@ -11,132 +11,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Parasomnias .css">
+    <link rel="stylesheet" href="css/Parasomnias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
 
 </head>
 <body>
+        <div class="container-fliud">
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
-          <img src="images/logo.png" alt="" width="320">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
+      <img src="images/logo.png" alt="" width="320">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12  ">
+      <form class="d-flex">
+        <input class="form-control me-2 my-4 border border-primary" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-4" type="submit">Search</button>
+      </form>
+      
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 d-flex ">
+          <a class="px-4 py-4" href="Login.jsp">Login</a>
+          <a class="mx-4 py-4"  href="ABOUT_US.jsp">About Us</a>
+          <a class="mx-4 py-4" href="SignUp.jsp">Sign up</a>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12  ">
-          <form class="d-flex">
-            <input class="form-control me-2 my-4 border border-primary" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-4" type="submit">Search</button>
-          </form>
-          
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 d-flex ">
-                 <a class="px-4 py-4" href="Login.jsp">Login</a>
-              <a class="mx-4 py-4"  href="ABOUT_US.jsp">About Us</a>
-              <a class="mx-4 py-4" href="SignUp.jsp">Sign up</a>
-            </div>
-      </div>
-      <div class="container-fliud">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <div class="container-fluid">
-         
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Healthy Eating
-                </a>
-                <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Alchohol and brain</a></li>
-                  <li><a class="dropdown-item" href="#">Eating well in budget</a></li>
-                  <li><a class="dropdown-item" href="#">Healthy foods for kids</a></li>
-                </ul>
-              </li>
-              <ul class="navbar-nav text-center">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Special diets
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                    <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                    <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                    <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                    <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                    <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                  </ul>
-                </li>
-    
+  </div>
+</div>
+   
+  <div class="container-fliud">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item ">
+            <a class="nav-link  text-white px-5" href="Desktop.jsp" aria-expanded="false">
+              Home
+            </a>
+          </li>
+  
+        </ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Healthy Eating
+            </a>
+            <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Alchohol.jsp">Alchohol and brain</a></li>
+              <li><a class="dropdown-item" href="Budget.jsp">Eating well in budget</a></li>
+              <li><a class="dropdown-item" href="Kids.jsp">Healthy foods for kids</a></li>
             </ul>
-            <ul class="navbar-nav text-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Vitamins and Supplements
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                  <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                  <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                  <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                  <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                  <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                </ul>
-              </li>
-    
-          </ul>
+          </li>
           <ul class="navbar-nav text-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Weight Management
+            <li class="nav-item dropdown  ">
+              <a class="nav-link dropdown-toggle text-white px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Special diets
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-              </ul>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="brackfast.jsp">Breakfast</a></li>
+                <li><a class="dropdown-item" href="Lunch.jsp">Lunch</a></li>
+                <li><a class="dropdown-item" href="">Dinner</a></li>
+                
+                <li><a class="dropdown-item" href="Food.jsp">View More</a></li>
+              </ul> 
             </li>
-    
+
         </ul>
         <ul class="navbar-nav text-center">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Recipies
+            <a class="nav-link dropdown-toggle text-white px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vitamins and Supplements
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-              <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-              <li><a class="dropdown-item" href="#">low-Residue</a></li>
-              <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-              <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-              <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
+              <li><a class="dropdown-item" href="vitA.jsp">Vitamin A</a></li>
+              <li><a class="dropdown-item" href="vitB1.jsp">Vitamin B1</a></li>
+              <li><a class="dropdown-item" href="vitB3.jsp">Vitamin B3</a></li>
+              <li><a class="dropdown-item" href="vitB5.jsp">Vitamin B5</a></li>
+              <li><a class="dropdown-item" href="vitC.jsp">Vitamin C</a></li>
+              <li><a class="dropdown-item" href="vit.jsp">View More</a></li>
             </ul>
           </li>
-    
+
       </ul>
       <ul class="navbar-nav text-center">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white px-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Nutrition Calculator
+        <li class="nav-item ">
+          <a class="nav-link  text-white px-2" href="beauty1.jsp" aria-expanded="false">
+            Weight Management
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-            <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-            <li><a class="dropdown-item" href="#">low-Residue</a></li>
-            <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-            <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-            <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-          </ul>
         </li>
-    
+
     </ul>
-          </div>
-        </div>
-      </nav>
+    <ul class="navbar-nav text-center">
+      <li class="nav-item">
+        <a class="nav-link text-white px-5" href="Food.jsp"  aria-expanded="false">
+          Recipies
+        </a>
+        
+      </li>
+
+  </ul>
+  <ul class="navbar-nav text-center">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-white px-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Nutrition Calculator
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Fitness calorie Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Food calorie Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Weight Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Thyroid Calculator</a></li>
+    <li><a class="dropdown-item" href="#">pancreatic Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Diet Planner</a></li>
+
+      </ul>
+    </li>
+
+</ul>
+      </div>
     </div>
+  </nav>
+</div>
+
         <div class="sec my-5 py-5">
             <div class="container-fluid">
                 <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
@@ -150,7 +148,7 @@
                             
                             We see cartons of juice and boxes of cereal trumpeting their vitamin and mineral content, but what are these microscopic nutrients, really? What do they do? How do they work? And why are they so important?</p>
                     </div>
-                    <div class="col" style="width: 500px; margin-left: 40px;">
+                    <div class="col w-50" style="width: 500px; margin-left: 40px;">
                         <h2 class="fw-bold">What Doctors say about Brain Disorder?</h2>
                         <div class="ph1"><img src="images/B2.jpg" alt=""></div>
                         <span><h3 class="mt-4">Name:Dr. Nipun Pauranik</h3>
@@ -359,7 +357,7 @@
         <div class="container">
             <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
                 <div class="col"   style=" width: 65%;margin-left:100px;">
-                    <h3 class="fw-bold mt-4">Pantothenic acid (aka vitamin B5)</h3>
+                    <h3 class="fw-bold mt-4">Pantothenic acid (aka <a href="vitB5.jsp">vitamin B5</a>)</h3>
                     <p style="font-size: 18px;">This vitamin is important in food metabolism and helps synthesize neurotransmitters, steroid hormones, red blood cells, and more.  <br><br>
 
                         You can’t really take so much that it becomes toxic. And while B5 deficiency is fairly rare (it tends to accompany severe malnutrition), neurologic symptoms, such as burning feet, may crop up.<br><br>
@@ -377,7 +375,7 @@
                          <p style="font-size: 18px;"><b>What’s too much?</b> Not determined <br><br>
 
                             While some people taking large doses of pantothenic acid develop mild diarrhea and gastrointestinal distress, high intakes do not cause toxicity.</p>
-                    <h3 class="fw-bold mt-4">Riboflavin (aka vitamin B2)</h3>
+                    <h3 class="fw-bold mt-4">Riboflavin (aka <a href="vitB2.jsp">vitamin B2</a>))</h3>
                     <p style="font-size: 18px;">This water-soluble B vitamin helps convert food to fuel, encourages iron absorption in the intestines, and also enhances the health of hair, skin, muscles, eyes, and the brain.<br><br>
 
                         And some research suggests that riboflavin may be effective at preventing migraines, too. <br><br>
@@ -397,10 +395,10 @@
                          </ul>
                         
 
-                    <h3 class="fw-bold mt-4">Thiamine (aka vitamin B1)</h3>
+                    <h3 class="fw-bold mt-4">Thiamine (aka <a href="vitB1.jsp">vitamin B1</a>))</h3>
                     <p style="font-size: 18px;">Another member of the water-soluble B pack, thiamine helps with food metabolism and boosts the health of hair, skin, muscles, and the brain.</p>
                          
-                    <h3 class="fw-bold mt-4">Thiamine (aka vitamin B1)</h3>
+                    <h3 class="fw-bold mt-4">Thiamine (aka  <a href="vitB1.jsp">vitamin B1</a>))</h3>
                     <p style="font-size: 18px;">Taking too much has never caused toxicity under observation, and though thiamine deficiency (also known as beriberi) is rare in the U.S., it does still happen.<br><br>
 
                         Symptoms affect the cardiovascular, nervous, muscular, and gastrointestinal systems in a variety of ways . <br><br>
@@ -416,7 +414,7 @@
                             <li>broiled pork chop, with 0.4 mg per 3oz-serving</li>
                             <li>cooked trout, with 0.4 mg per 3oz-serving</li>
                          </ul>
-                        <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin A (aka retinol, retinal, retinoic acid)</h3></a>
+                        <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4"><a href="vitA.jsp">vitamin A</a> (aka retinol, retinal, retinoic acid)</h3></a>
                          <p style="font-size: 18px;">Though known as being good for vision (hello, carrots), vitamin A has many other vital tasks: It encourages red and white blood cell production and activity, keeps the immune system primed and blood vessels healthy, helps rebuild bone, regulates cell growth and division, and may reduce the risk of some cancers.<br><br>
 
                             Retinoids, or variations of Vitamin A, also play a role in some medications that treat various skin diseases and acne. <br><br>
@@ -458,7 +456,7 @@
                                     <li>death</li>
                                  </ul>
                                  <p style="font-size: 18px;">High doses of vitamin A can also cause significant congenital anomalies — women should keep an eye on their vitamin A intake while they’re pregnant.</p>
-                                 <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin B6 (aka pyridoxal, pyridoxine, pyridoxamine)</h3></a>
+                                 <a href="vitB6.jsp" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin B6 (aka pyridoxal, pyridoxine, pyridoxamine)</h3></a>
                                 <p style="font-size: 18px;">Like a G6, this essential, water-soluble vitamin flies high above the others (or, at least on a level with the best of ’em).  <br><br>
 
                                     Vitamin B6 helps out with the production of serotonin, a hormone that plays a hand in sleep, appetite, and mood.<br><br>
@@ -486,7 +484,7 @@
                                         
                                         Taking extremely large doses of vitamin B6 daily over time can cause you to lose control over your bodily movements, as well as painful skin lesions, sensitivity to light, nausea, and heartburn.</p>
 
-                                    <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin B12</h3></a>
+                                    <a href="vitB12.jsp" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin B12</h3></a>
                                     <p style="font-size: 18px;">Another water-soluble B vitamin, vitamin B12 offers a helping hand in the metabolism of fatty acids and amino acids, cell creation, and the protection of nerve cells, and also may reduce the risk of Alzheimer’s.  <br><br>
 
                                         Good heavens, are those water-solubles handy or what? (More on these later.)<br><br>
@@ -510,7 +508,7 @@
                                         <li>low fat milk, with 1.2 mcg per cup</li>
                                        
                                     </ul>
-                                    <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin C (aka ascorbic acid)</h3></a>
+                                    <a href="vitC.jsp" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin C (aka ascorbic acid)</h3></a>
                                     <p style="font-size: 18px;">As we go on, we remember… that vitamin C is one of the best vitamins ever! Cartons of OJ are emblazoned with this popular vitamin’s name — and it’s famous for a good reason. <br><br>
 
                                         Vitamin C is thought to reduce the risk for some cancers, including those of the mouth, esophagus, stomach, and breast.<br><br>
@@ -552,7 +550,7 @@
                                         <li>other belly troubles</li>
                                     </ul>
 
-                                    <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin D</h3></a>
+                                    <a href="vitD.jsp" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin D</h3></a>
                                     <p style="font-size: 18px;">This essential fat-soluble vitamin — which is vital for normal calcium metabolism, immunity, nervous system function, and bone density — sure does.Trusted Source But before vitamin D can live up to its expectations, it must be activated by a burst of UV rays.<br><br>
 
                                         Before you throw on a bikini and soak up the sun (putting you at risk for skin cancer, be super careful when you sunbathe) consider supplements or cereals, milk, and juices that are fortified with the active form, which is equally effective.<br><br>
@@ -572,7 +570,7 @@
                                         <li>fortified cereal, with 2.0 mcg (80 IU) per serving</li>
                                         <li>scrambled egg, with 1.1 mcg (44 IU) per large egg</li>
                                     </ul>
-                                    <a href="" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin E</h3></a>
+                                    <a href="vitE.jsp" class="text-decoration-none text-danger"> <h3 class="fw-bold mt-4">Vitamin E</h3></a>
                                     <p style="font-size: 18px;">E is for the Excellent Eight. A family of eight antioxidants, vitamin E protects essential lipids from damage, battles free radicals, and maintains the integrity of cell membranes. <br><br>
 
 
@@ -608,7 +606,7 @@
                             <div class="container">
                                 <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
                                     <div class="col"   style=" width: 65%;margin-left:100px;">
-                                    <a href="" class="text-decoration-none text-danger">
+                                    <a href="vitK.jsp" class="text-decoration-none text-danger">
                                     <h3 class="fw-bold mt-4">Vitamin K</h3></a>
                                     <p style="font-size: 18px;">Not to be confused with its mineral chum potassium (which is also noted as a “K” on the periodic table) (oh, hi, 4th grade chemistry), this essential, fat-soluble vitamin is a must for normal wound healing and bone development. <br><br>
 

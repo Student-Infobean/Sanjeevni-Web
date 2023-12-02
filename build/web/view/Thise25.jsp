@@ -33,128 +33,123 @@
   </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
-              <img src="images/logo.png" alt="" width="320">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12  ">
-              <form class="d-flex">
-                <input class="form-control me-2 my-4 border border-primary" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary my-4" type="submit">Search</button>
-              </form>
-              
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 d-flex ">
-                   <a class="px-4 py-4" href="Login.jsp">Login</a>
-              <a class="mx-4 py-4"  href="ABOUT_US.jsp">About Us</a>
-              <a class="mx-4 py-4" href="SignUp.jsp">Sign up</a>
-                </div>
-          </div>
-          <div class="container-fliud">
-          <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <div class="container-fluid">
-             
-              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav text-center">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Healthy Eating
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Alchohol and brain</a></li>
-                      <li><a class="dropdown-item" href="#">Eating well in budget</a></li>
-                      <li><a class="dropdown-item" href="#">Healthy foods for kids</a></li>
-                    </ul>
-                  </li>
-                  <ul class="navbar-nav text-center">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Special diets
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                        <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                        <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                        <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                        <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                        <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                      </ul>
-                    </li>
-        
-                </ul>
-                <ul class="navbar-nav text-center">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Vitamins and Supplements
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                      <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                      <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                      <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                      <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                      <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                    </ul>
-                  </li>
-        
-              </ul>
-              <ul class="navbar-nav text-center">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Weight Management
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                    <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                    <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                    <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                    <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                    <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                  </ul>
-                </li>
-        
-            </ul>
-            <ul class="navbar-nav text-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Recipies
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                  <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                  <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                  <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                  <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                  <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-                </ul>
-              </li>
-        
-          </ul>
-          <ul class="navbar-nav text-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white px-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nutrition Calculator
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Pureed diets</a></li>
-                <li><a class="dropdown-item" href="#">Ketogenic diet</a></li>
-                <li><a class="dropdown-item" href="#">low-Residue</a></li>
-                <li><a class="dropdown-item" href="#">Mechanical Soft diet</a></li>
-                <li><a class="dropdown-item" href="#">Full liquid diet</a></li>
-                <li><a class="dropdown-item" href="#">Fibromyalgia diet</a></li>
-              </ul>
-            </li>
-        
-        </ul>
-              </div>
-            </div>
-          </nav>
+     <div class="container-fliud">
+    <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
+      <img src="images/logo.png" alt="" width="320">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12  ">
+      <form class="d-flex">
+        <input class="form-control me-2 my-4 border border-primary" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-4" type="submit">Search</button>
+      </form>
+      
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 d-flex ">
+          <a class="px-4 py-4" href="Login.jsp">Login</a>
+          <a class="mx-4 py-4"  href="ABOUT_US.jsp">About Us</a>
+          <a class="mx-4 py-4" href="SignUp.jsp">Sign up</a>
         </div>
   </div>
+</div>
+   
+  <div class="container-fliud">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item ">
+            <a class="nav-link  text-white px-5" href="Desktop.jsp" aria-expanded="false">
+              Home
+            </a>
+          </li>
+  
+        </ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white px-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Healthy Eating
+            </a>
+            <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Alchohol.jsp">Alchohol and brain</a></li>
+              <li><a class="dropdown-item" href="Budget.jsp">Eating well in budget</a></li>
+              <li><a class="dropdown-item" href="Kids.jsp">Healthy foods for kids</a></li>
+            </ul>
+          </li>
+          <ul class="navbar-nav text-center">
+            <li class="nav-item dropdown  ">
+              <a class="nav-link dropdown-toggle text-white px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Special diets
+              </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="brackfast.jsp">Breakfast</a></li>
+                <li><a class="dropdown-item" href="Lunch.jsp">Lunch</a></li>
+                <li><a class="dropdown-item" href="">Dinner</a></li>
+                
+                <li><a class="dropdown-item" href="Food.jsp">View More</a></li>
+              </ul> 
+            </li>
+
+        </ul>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vitamins and Supplements
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="vitA.jsp">Vitamin A</a></li>
+              <li><a class="dropdown-item" href="vitB1.jsp">Vitamin B1</a></li>
+              <li><a class="dropdown-item" href="vitB3.jsp">Vitamin B3</a></li>
+              <li><a class="dropdown-item" href="vitB5.jsp">Vitamin B5</a></li>
+              <li><a class="dropdown-item" href="vitC.jsp">Vitamin C</a></li>
+              <li><a class="dropdown-item" href="vit.jsp">View More</a></li>
+            </ul>
+          </li>
+
+      </ul>
+      <ul class="navbar-nav text-center">
+        <li class="nav-item ">
+          <a class="nav-link  text-white px-2" href="beauty1.jsp" aria-expanded="false">
+            Weight Management
+          </a>
+        </li>
+
+    </ul>
+    <ul class="navbar-nav text-center">
+      <li class="nav-item">
+        <a class="nav-link text-white px-5" href="Food.jsp"  aria-expanded="false">
+          Recipies
+        </a>
+        
+      </li>
+
+  </ul>
+  <ul class="navbar-nav text-center">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-white px-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Nutrition Calculator
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Fitness calorie Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Food calorie Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Weight Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Thyroid Calculator</a></li>
+     <li><a class="dropdown-item" href="#">pancreatic Calculator</a></li>
+        <li><a class="dropdown-item" href="#">Diet Planner</a></li>
+
+      </ul>
+    </li>
+
+</ul>
+      </div>
+    </div>
+  </nav>
+</div>
 
   <div class="container my-5 border border-1  w-75">
     <div class="row row-cols-lg-1 row-cols-1">
