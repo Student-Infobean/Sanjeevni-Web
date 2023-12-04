@@ -9,6 +9,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.vendor.service.DBCon;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -97,6 +99,8 @@ public class VendorDTO {
              ResultSet rs=ps.executeQuery();
              
              if(rs.next()){
+
+            if(rs.getInt("approval")!=0){
                  vdao.setEmail(rs.getString("email"));
                  vdao.setName(rs.getString("name"));
                  vdao.setAddress(rs.getString("address"));
@@ -104,48 +108,63 @@ public class VendorDTO {
                  vdao.setVendor_id(rs.getInt("vendor_Id"));
                  vdao.setPassword(rs.getString("password"));
                  vdao.setCampaignPhoto(rs.getString("campaignPhoto"));
+                b=true;
+            }
+            else{
+                vdao.setMessage("We will send a confirmation email when you will approved");
+            }
                  
-                  b=true;
+                  
+             }else{
+                 vdao.setMessage("Username And passord not matched");
              }
            
            return b;       
     }
-    public static boolean insert(VendorDAO vdao) throws SQLException{
-           boolean b=false;
-           Connection con=DBCon.DBConnnection();
+    public static boolean insert(VendorDAO vdao){
+        boolean b=false;
+        try {
+            
+            Connection con=DBCon.DBConnnection();
             //ResultSet rs;
             PreparedStatement ps;
-             String query = "insert into VendorDetls(name,email,phone,address,vendor_Id,campaignPhoto,password) values(?,?,?,?,?,?,?)";
-        try {
-              
-              ps = con.prepareStatement(query);
-              ps.setString(1,vdao.getName());
-              ps.setString(2,vdao.getEmail());
-              ps.setString(3, vdao.getPhone());
-              ps.setString(4,vdao.getAddress());
-              
-              ps.setInt(5, vdao.getVendor_id());
-              ps.setString(6, vdao.getCampaignPhoto());
-              String pass = vdao.getPassword();
-              byte[] enc = pass.getBytes();
-              String encname = "";
-              for (int i = 0; i < enc.length; i++) {
-                if (!encname.isEmpty()) {
-                    encname += "A";
-                }
-                int modi = enc[i] * 2;
-                encname += modi;
-             }
-             ps.setString(7, encname);
+            String query = "insert into VendorDetls(name,email,phone,address,vendor_Id,campaignPhoto,password,approval) values(?,?,?,?,?,?,?,?)";
             
-             if(ps.executeUpdate()>0){
-                 System.out.println("ye call huaa");
-                 b=true;
-             }                  
-        } catch (SQLException ex) {
-           
+                
+                ps = con.prepareStatement(query);
+                ps.setString(1,vdao.getName());
+                ps.setString(2,vdao.getEmail());
+                ps.setString(3, vdao.getPhone());
+                ps.setString(4,vdao.getAddress());
+                
+                ps.setInt(5, vdao.getVendor_id());
+                ps.setString(6, vdao.getCampaignPhoto());
+                String pass = vdao.getPassword();
+                byte[] enc = pass.getBytes();
+                String encname = "";
+                for (int i = 0; i < enc.length; i++) {
+                    if (!encname.isEmpty()) {
+                        encname += "A";
+                    }
+                    int modi = enc[i] * 2;
+                    encname += modi;
+                }
+                ps.setString(7, encname);
+                ps.setInt(8, 0);
+                System.out.println("asdgasgfsdf : "+con);
+                int i = ps.executeUpdate();
+                if(i>0){
+                    System.out.println("ye call huaa");
+                    b=true;
+                }
+                              
+            
         }
-           return b;
+        catch (SQLException ex) {
+                ex.printStackTrace();
+         } 
+        return b;
     }
+    
     
 }

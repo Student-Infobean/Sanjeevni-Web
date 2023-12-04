@@ -4,11 +4,9 @@
  */
 package com.sanjeevni.controller;
 
-import com.sanjeevni.modal.AdminDAO;
-import com.sanjeevni.modal.AdminDTO;
+import com.UserModul.service.GEMailSender;
 import com.sanjeevni.modal.vendorDAO;
 import com.sanjeevni.modal.vendorDTO;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -21,10 +19,10 @@ import java.util.List;
 
 /**
  *
- * @author Lenovo
+ * @author hp
  */
-@WebServlet(name = "AdminLogin", urlPatterns = {"/AdminLogin"})
-public class AdminLogin extends HttpServlet {
+@WebServlet(name = "Approve", urlPatterns = {"/Approve"})
+public class Approve extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -39,30 +37,58 @@ public class AdminLogin extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            System.out.println("asdgsdfhsghdfbbsfn");
-       HttpSession session = request.getSession(); 
-            String email = request.getParameter("Email");
-            String pass = request.getParameter("pass");
-            AdminDAO edao = new AdminDAO();
-            edao.setEmail(email);
-            edao.setPass(pass);
-
-            AdminDTO edto = new AdminDTO();
-            boolean b = edto.login(edao);
-            System.out.println("" + b);
-            if (b) {
-                session.setAttribute("email", email);
+            /* TODO output your page here. You may use following sample code. */
+            HttpSession session  = request.getSession();
+            String process = request.getParameter("confirm");
+            out.println(process);
+            if(process.equals("confirm")){
+                int id = Integer.parseInt(request.getParameter("approval"));
+                System.out.println("asdg: "+id);
                 vendorDTO vdto = new vendorDTO();
-                List<vendorDAO> vdao = vdto.vendorApproval();
+                boolean b = vdto.updateApproval(id);
+                if(b){
+                    List<vendorDAO> vdao = vdto.vendorApproval();
                 System.out.println("asdfag : "+vdao.size());
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);
-                System.out.println("sucess go gya");
+                System.out.println("update go gya");
+                String email = request.getParameter("emailforsend");
+                GEMailSender gm = new GEMailSender();
+                String to = email;
+                String from = "sb360879@gmail.com";
+                String subject = "This is email using java";
+                String text = "your Account is approved \n you can now provide services";
+                System.out.println("Swati");
+            // made by sachin
+                    boolean c = gm.sendEmail(to, from, subject, text);
+                    if(c){
+                        session.setAttribute("message","Confirmation sent");
+                        response.sendRedirect("../view/AdmindashBoard.jsp");
+                    }
+                    else{
+                        session.setAttribute("message","Confirmation can't sent but vendor approved");
+                        response.sendRedirect("../view/AdmindashBoard.jsp");
+                    }
+
+                
+                    
+                }
+                
+            }else if(process.equals("delete")){
+                int id = Integer.parseInt(request.getParameter("delete"));
+                System.out.println("asdgsdfg: "+id);
+                vendorDTO vdto = new vendorDTO();
+                boolean b = vdto.deleteId(id);
+                if(b){
+                    List<vendorDAO> vdao = vdto.vendorApproval();
+                System.out.println("asdfag : "+vdao.size());
+                session.setAttribute("size",vdao.size());
+                session.setAttribute("obj", vdao);
+                System.out.println("delete go gya");
                 response.sendRedirect("../view/AdmindashBoard.jsp");
-            } else {
-                session.setAttribute("message", "Invalid Email & Password");
-                response.sendRedirect("../view/AdminLogin.jsp");
+                }
             }
+           
         }
     }
 

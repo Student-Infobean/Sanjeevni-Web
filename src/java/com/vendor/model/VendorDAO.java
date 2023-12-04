@@ -13,7 +13,15 @@ import java.io.Serializable;
  */
 public class VendorDAO implements Serializable {
     int vendor_id;
-    String name , email , phone , address, campaignPhoto ,Password;
+    String name , email , phone , address, campaignPhoto ,Password,message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
     
     public VendorDAO() {
     }
