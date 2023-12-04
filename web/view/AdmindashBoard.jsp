@@ -7,7 +7,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.sanjeevni.modal.*" %>
+<%@ page import="com.vendor.model.*" %>
 <%@ page import="jakarta.servlet.*" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,6 +67,9 @@
           <span style="color: #FFC107;" class="d-none d-lg-block">Admin Dashboard</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
+        <a style="float:right;margin-left: 1100px"  href="../LogOut"><i class="fas fa-sign-out fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="url"><i class="fa-solid fa-bell fa-2xl"></i></a>
       </div>
         <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
@@ -75,6 +78,7 @@
               <i class="bi bi-search"></i>
             </a>
           </li>
+          
         </ul>
       </nav>
     </header>
@@ -172,7 +176,6 @@
           <table class='table table-bodered table-hover table-responsive'>
         <tr>
             <th>Name</th>
-            
             <th>Email</th>
             <th>CampaignDate</th>
             <th>Address</th>
@@ -180,21 +183,21 @@
             
         </tr>
         <%
-            ArrayList <CampaignViewDAO> camp = (ArrayList<CampaignViewDAO>)session.getAttribute("campaign");
+            ArrayList <CampaignDAO> camp = (ArrayList<CampaignDAO>)session.getAttribute("campaign");
             if(camp!=null){
-            for(CampaignViewDAO c:camp){
-                CampaignViewDAO cdao = c;
+            for(CampaignDAO c:camp){
+                CampaignDAO cdao = c;
         %>
         <tr>
             <td><%= cdao.getName() %></td>
             <td><%= cdao.getEmail() %></td>
            
-            <td><%= cdao.getCampaignDate() %></td>
+            <td><%= cdao.getCampaign_Date() %></td>
             <td><%= cdao.getAddress() %></td>
-            <td><%= cdao.getVendorId()%></td>
+            <td><%= cdao.getVendor_Id()%></td>
              <td>
                      <form  action="..//CampaignView">
-                        <input type="hidden"  value="<%= cdao.getId() %>" name="deleteEmail">
+                        <input type="hidden"  value="<%= cdao.getCamp_id()%>" name="deleteEmail">
                        <!-- Button trigger modal -->
                        <button  class="btn btn-outline-danger"  value="delete" name="showcampaign">
                       Delete

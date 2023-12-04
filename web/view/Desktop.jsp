@@ -57,10 +57,30 @@
 						<a class="nav-link" href="proje_1.jsp">Hospital</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Login.jsp">LogIn</a>
+						<div class="dropdown">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Login
+                                                </a>
+
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="Login.jsp">User</a></li>
+                                                  <li><a class="dropdown-item" href="../VendorLogin.jsp">Vendor</a></li>
+                                                  <li><a class="dropdown-item" href="AdminLogin.jsp">Admin</a></li>
+                                                </ul>
+                                              </div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="SignUp.jsp">SignUp</a>
+						<div class="dropdown">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  SignUp
+                                                </a>
+
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="Registration.jsp">User</a></li>
+                                                  <li><a class="dropdown-item" href="../VendorRegistration.jsp">Vendor</a></li>
+                                                 
+                                                </ul>
+                                              </div>
 					</li>
                     <li class="nav-item">
 						<a class="nav-link" href="ABOUT_US.jsp">About Us</a>

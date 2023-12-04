@@ -67,12 +67,16 @@
                     <span style="color: #FFC107;" class="d-none d-lg-block">Admin Dashboard</span>
                 </a>
                 <i class="bi bi-list toggle-sidebar-btn"></i>
+                <a style="float:right;margin-left: 1100px"  href="../LogOut"><i class="fas fa-sign-out fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="url"><i class="fa-solid fa-bell fa-2xl"></i></a>
             </div>
             <nav class="header-nav ms-auto">
                 <ul class="d-flex align-items-center">
                     <li class="nav-item d-block d-lg-none">
                         <a class="nav-link nav-icon search-bar-toggle" href="#">
                             <i class="bi bi-search"></i>
+                            
                         </a>
                     </li>
                 </ul>
@@ -196,7 +200,7 @@
 
                         <%
                                     UserDTO pdto = new UserDTO();
-                                    List<UserDAO> product = pdto.userDetails();
+                                   List<UserDAO> product = pdto.userDetails();
                                    if(product!=null){
                                    for(UserDAO c: product){
                                     UserDAO dao = c;
@@ -223,13 +227,13 @@
                                 <!--<p class="text-muted mb-0">IT department</p>-->
                             </td>
                             <td>
-                                <span><%= dao.getAddress()%></span>
+                                <span><%= dao.getAddres()%></span>
                             </td>
                             <td><%= dao.getPhone()%></td>
 
                             <td>
                                 <form  action="..//CampaignView">
-                                    <input type="hidden"  value="<%= dao.getUserId() %>" name="deleteUser">
+                                    <input type="hidden"  value="<%= dao.getUserID()%>" name="deleteUser">
                                     <!-- Button trigger modal -->
                                     <button  class="btn btn-outline-danger"  value="Userdelete" name="showcampaign">
                                         Delete

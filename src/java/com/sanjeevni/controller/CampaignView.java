@@ -4,12 +4,13 @@
  */
 package com.sanjeevni.controller;
 
-import com.sanjeevni.modal.CampaignViewDAO;
 import com.sanjeevni.modal.CampaignViewDTO;
 import com.sanjeevni.modal.UserDAO;
 import com.sanjeevni.modal.UserDTO;
 import com.sanjeevni.modal.vendorDAO;
 import com.sanjeevni.modal.vendorDTO;
+import com.vendor.model.CampaignDAO;
+import com.vendor.model.CampaignDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -18,7 +19,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -37,16 +41,17 @@ public class CampaignView extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             HttpSession session = request.getSession();
             String name = request.getParameter("showcampaign");
+            System.out.println("agd"+name);
             if (name.equals("View")) {
-                CampaignViewDTO cdto  = new CampaignViewDTO();
+                CampaignDTO cdto  = new CampaignDTO();
             
-            List <CampaignViewDAO> cdao = cdto.getCampaignDetails();
+            List <CampaignDAO> cdao = cdto.getAllCampaigns();
             
             
                 
@@ -56,12 +61,13 @@ public class CampaignView extends HttpServlet {
                 System.out.println(""+name);
             }else if(name.equals("delete")){
                 System.out.println("ds paergasjgasdjv");
-                int id  = Integer.parseInt(request.getParameter("deleteEmail"));
-                CampaignViewDTO cdto  = new CampaignViewDTO();
+                int id = Integer.parseInt(request.getParameter("deleteEmail"));
+                CampaignDTO cdto  = new CampaignDTO();
+                System.out.println("Id : "+id);
                 boolean b = cdto.deleteCampaignById(id)
-;
+;                   System.out.println("asg : "+b);
                 if(b){
-                        List <CampaignViewDAO> cdao = cdto.getCampaignDetails();
+                        List <CampaignDAO> cdao = cdto.getAllCampaigns();
                         session.setAttribute("campaign", cdao);
                         response.sendRedirect("../view/AdmindashBoard.jsp");
                 }
@@ -70,7 +76,7 @@ public class CampaignView extends HttpServlet {
                 System.out.println("User");
                 int id  = Integer.parseInt(request.getParameter("deleteUser"));
                 UserDAO udao = new UserDAO();
-                udao.setUserId(id);
+                udao.setUserID(id);
                 UserDTO udto=new UserDTO();
                 boolean b=udto.deleteId(id);
 ;
@@ -124,7 +130,11 @@ public class CampaignView extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(CampaignView.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -138,7 +148,11 @@ public class CampaignView extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(CampaignView.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**

@@ -4,66 +4,113 @@
  */
 package com.sanjeevni.modal;
 
-import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
- * @author hp
+ * @author T460
  */
-public class CampaignViewDAO implements Serializable {
-    String name,email,campaignDate,address;
-    int vendorId,id;
+public class CampaignViewDAO{
 
-    public CampaignViewDAO(){
+    int maximum_appointment, vendor_Id,camp_id;
+    Date Campaign_Date;
+    String name, email, address, image;
+
+  
+
+    public CampaignViewDAO(int maximum_appointment, int vendor_Id, int camp_id, Date Campaign_Date, String name, String email, String address, String image) {
+        this.maximum_appointment = maximum_appointment;
+        this.vendor_Id = vendor_Id;
+        this.camp_id = camp_id;
+        this.Campaign_Date = Campaign_Date;
+        this.name = name;
+        this.email = email;
+        this.address = address;
+        this.image = image;
     }
 
-    public String getName() {
-        return name;
+    public CampaignViewDAO(int maximum_appointment, Date Campaign_Date, String name, String email, String address, String image) {
+        this.maximum_appointment = maximum_appointment;
+        this.Campaign_Date = Campaign_Date;
+        this.name = name;
+        this.email = email;
+        this.address = address;
+        this.image = image;
+    }
+
+    public CampaignViewDAO() {
+    }
+
+    public CampaignViewDAO(int maximum_appointment, int vendor_Id, Date Campaign_Date, String name, String email, String address, String image) {
+        this.maximum_appointment = maximum_appointment;
+        this.vendor_Id = vendor_Id;
+        this.Campaign_Date = Campaign_Date;
+        this.name = name;
+        this.email = email;
+        this.address = address;
+        this.image = image;
+    }
+  public int getCamp_id() {
+        return camp_id;
+    }
+
+    public void setCamp_id(int camp_id) {
+        this.camp_id = camp_id;
+    }
+    public void setMaximum_appointment(int maximum_appointment) {
+        this.maximum_appointment = maximum_appointment;
+    }
+
+    public void setVendor_Id(int vendor_Id) {
+        this.vendor_Id = vendor_Id;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setCampaign_Date(Date Campaign_Date) {
+        this.Campaign_Date = Campaign_Date;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    
-
-    public String getCampaignDate() {
-        return campaignDate;
-    }
-
-    public void setCampaignDate(String campaignDate) {
-        this.campaignDate = campaignDate;
-    }
-
-    public String getAddress() {
-        return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public int getVendorId() {
-        return vendorId;
+    public int getMaximum_appointment() {
+        return maximum_appointment;
     }
 
-    public void setVendorId(int vendorId) {
-        this.vendorId = vendorId;
+    public int getVendor_Id() {
+        return vendor_Id;
     }
 
-    void setId(int aInt) {
-        this.id = aInt;
+    public Date getCampaign_Date() {
+        return Campaign_Date;
     }
 
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
 }

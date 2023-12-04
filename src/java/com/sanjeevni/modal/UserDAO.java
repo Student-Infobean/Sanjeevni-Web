@@ -3,36 +3,39 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.sanjeevni.modal;
+
+import java.security.Timestamp;
 import java.sql.*;
 
 /**
  *
- * @author Lenovo
+ * @author Dell
  */
 public class UserDAO {
-    private String name,email,phone,dob,address;
-    private int UserId;
-    private byte[] image;
+    private String name,email,phone,addres;
+
+   
+private int userID;
+private String dob;
+//private String address;
+private String profilephoto,password;
+
     public UserDAO() {
     }
 
-    public UserDAO(String name, String email, String phone, String dob, String address, int UserId,byte[] image) {
+
+    public UserDAO(String name, String email, String phone, String addres, int userID, String dob, String profilephoto,String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.addres = addres;
+        this.userID = userID;
         this.dob = dob;
-        this.address = address;
-        this.UserId = UserId;
-        this.image = image;
+       this.profilephoto=profilephoto;
+       
+        this.password=password;
     }
 
-    public byte[] getImage() {
-        return image;
-    }
-
-    public void setImage(byte[] image) {
-        this.image = image;
-    }
 
     public String getName() {
         return name;
@@ -58,6 +61,22 @@ public class UserDAO {
         this.phone = phone;
     }
 
+    public String getAddres() {
+        return addres;
+    }
+
+    public void setAddres(String addres) {
+        this.addres = addres;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
     public String getDob() {
         return dob;
     }
@@ -66,20 +85,24 @@ public class UserDAO {
         this.dob = dob;
     }
 
-    public String getAddress() {
-        return address;
+    public String getProfilephoto() {
+        return profilephoto;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setProfilephoto(String profilephoto) {
+        this.profilephoto = profilephoto;
     }
 
-    public int getUserId() {
-        return UserId;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserId(int UserId) {
-        this.UserId = UserId;
+    public void setPassword(String password) {
+        this.password = password;
+        System.out.println(password);
     }
-  
+
+    
+
+
 }

@@ -32,13 +32,16 @@ public class CampaignViewDTO {
                
                 vdao = new CampaignViewDAO();
              
-                vdao.setId(resultSet.getInt(1));
                
-                vdao.setName(resultSet.getString(2));
-                vdao.setEmail(resultSet.getString(3));
-                vdao.setCampaignDate(resultSet.getString(4));
+               
+                vdao.setName(resultSet.getString(1));
+                vdao.setEmail(resultSet.getString(2));
+                vdao.setMaximum_appointment(resultSet.getInt(3));
+                vdao.setCampaign_Date(resultSet.getDate(4));
                 vdao.setAddress(resultSet.getString(5));
-                vdao.setVendorId(resultSet.getInt(6));
+                vdao.setVendor_Id(resultSet.getInt(6));
+                vdao.setImage(resultSet.getString(7));
+                 vdao.setCamp_id(resultSet.getInt(1));
                 vendorList.add(vdao);
             
             }
@@ -52,15 +55,15 @@ public class CampaignViewDTO {
 
         return null; // Handle errors appropriately
     }
-    public boolean deleteCampaignById(int id) {
+    public boolean deleteCampaignById(String email) {
         boolean b = false;
     Connection connection = GetConnection.getConnection();
 
-    String deleteSql = "DELETE FROM campaigndetails WHERE campaignId = ?";
+    String deleteSql = "DELETE FROM campaigndetails WHERE Email = ?";
 
     try (PreparedStatement deletePs = connection.prepareStatement(deleteSql)) {
         // Set the vendorId parameter in the prepared statement
-        deletePs.setInt(1, id);
+        deletePs.setString(1, email);
 
         // Execute the delete query
         int rowsAffected = deletePs.executeUpdate();

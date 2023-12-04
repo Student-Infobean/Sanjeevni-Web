@@ -67,6 +67,9 @@
           <span style="color: #FFC107;" class="d-none d-lg-block">Admin Dashboard</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
+        <a style="float:right;margin-left: 1100px"  href="../LogOut"><i class="fas fa-sign-out fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="url"><i class="fa-solid fa-bell fa-2xl"></i></a>
       </div>
         <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
