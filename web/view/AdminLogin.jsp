@@ -202,6 +202,7 @@
                   <input required="" name="pass" type="password">
                   <label>Password</label>
                 </div>
+                 <%@include file="../component/message.jsp"%>
                     <a>
                   <span></span>
                   <span></span>
@@ -210,7 +211,7 @@
                   <input style="background-color: transparent; color:White; border: none;" value="S U B M I T"  type="submit">
                     </a>
                   
-                  
+                 
                 
 <!--              <a href="..//UserRegis">
                   <span></span>

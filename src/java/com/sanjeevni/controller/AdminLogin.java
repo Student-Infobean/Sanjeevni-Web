@@ -35,7 +35,7 @@ public class AdminLogin extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
+       HttpSession session = request.getSession(); 
             String email = request.getParameter("Email");
             String pass = request.getParameter("pass");
             AdminDAO edao = new AdminDAO();
@@ -46,17 +46,13 @@ public class AdminLogin extends HttpServlet {
             boolean b = edto.login(edao);
             System.out.println("" + b);
             if (b) {
-
-                HttpSession session = request.getSession();
                 session.setAttribute("email", email);
                 response.sendRedirect("../view/AdmindashBoard.jsp");
-
             } else {
-                response.sendRedirect("AdminLogin.jsp");
+                session.setAttribute("message", "Invalid Email & Password");
+                response.sendRedirect("../view/AdminLogin.jsp");
             }
-
         }
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
