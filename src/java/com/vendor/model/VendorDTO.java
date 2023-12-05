@@ -4,11 +4,15 @@
  */
 package com.vendor.model;
 
+import com.sanjeevni.modal.vendorDAO;
+import com.sanjeevni.service.GetConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.vendor.service.DBCon;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -50,6 +54,91 @@ public class VendorDTO {
 
     return b;
 }
+    public List<VendorDAO> vendorApproval() {
+        List<VendorDAO> lpd = new ArrayList<>();
+        Connection con = null;
+
+        try {
+            con = GetConnection.getConnection();
+            if (con != null) {
+                String sql = "select * from vendordetls where approval=0";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ResultSet rs = ps.executeQuery();
+
+                while (rs.next()) {
+                    VendorDAO dao = new VendorDAO();
+                    dao.setVendor_id(rs.getInt("vendor_id"));
+                    dao.setName(rs.getString("Name"));
+                    dao.setEmail(rs.getString("email"));
+                    dao.setPhone(rs.getString("phone"));
+
+                    dao.setAddress(rs.getString("address"));
+                    dao.setCampaignPhoto(rs.getString("campaignPhoto"));
+                    lpd.add(dao);
+
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println("" + e);
+        }
+        return lpd;
+    }
+    public boolean deleteId(int id) {
+        boolean b = false;
+        Connection con = null;
+
+        try {
+            con = GetConnection.getConnection();
+            if (con != null) {
+                String sql = "DELETE FROM vendorDetls WHERE vendor_id=? ";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ps.setInt(1, id);
+                int e = ps.executeUpdate();
+
+                if (e > 0) {
+                    b = true;
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println("" + e);
+        }
+        return b;
+    }
+    public boolean updateApproval(int id) {
+    boolean success = false;
+    Connection con = null;
+
+    try {
+        con = GetConnection.getConnection();
+        if (con != null) {
+            String updateSql = "UPDATE vendorDetls SET approval=1 WHERE vendor_id=?";
+            PreparedStatement updatePs = con.prepareStatement(updateSql);
+            
+            updatePs.setInt(1, id);
+            int updateResult = updatePs.executeUpdate();
+
+            if (updateResult > 0) {
+                success = true;
+            }
+        }
+    } catch (Exception e) {
+        System.out.println("" + e);
+    } finally {
+        // Close resources in a finally block
+        try {
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    return success;
+}
+
     public boolean passwordUpdate(VendorDAO vdao) throws SQLException{
          boolean b=false;
          Connection con=DBCon.DBConnnection();

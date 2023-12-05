@@ -8,6 +8,7 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="com.sanjeevni.modal.*" %>
+<%@ page import="com.vendor.model.*" %>
 <%@ page import="jakarta.servlet.*" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -197,10 +198,10 @@
             
         </tr>
         <%
-            ArrayList <vendorDAO> camp = (ArrayList<vendorDAO>)session.getAttribute("obj");
+            ArrayList <VendorDAO> camp = (ArrayList<VendorDAO>)session.getAttribute("obj");
             if(camp!=null){
-            for(vendorDAO c:camp){
-                vendorDAO cdao = c;
+            for(VendorDAO c:camp){
+                VendorDAO cdao = c;
         %>
         <tr>
             <td><%= cdao.getName() %></td>
@@ -211,13 +212,13 @@
             
              <td>
                      <form  action="..//Approve">
-                         <input type="hidden"  value="<%= cdao.getVendorId()%>" name="approval">
+                         <input type="hidden"  value="<%= cdao.getVendor_id()%>" name="approval">
                        <!-- Button trigger modal -->
                        <input type="hidden"  value="<%= cdao.getEmail()%>" name="emailforsend">
                        <button  class="btn btn-outline-success"  value="confirm" name="confirm">
                       Approve
                     </button>
-                        <input type="hidden"  value="<%= cdao.getVendorId()%>" name="delete">
+                        <input type="hidden"  value="<%= cdao.getVendor_id()%>" name="delete">
                        <!-- Button trigger modal -->
                        <button  class="btn btn-outline-danger"  value="delete" name="confirm">
                       Delete

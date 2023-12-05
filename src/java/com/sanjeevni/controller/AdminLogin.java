@@ -7,7 +7,8 @@ package com.sanjeevni.controller;
 import com.sanjeevni.modal.AdminDAO;
 import com.sanjeevni.modal.AdminDTO;
 import com.sanjeevni.modal.vendorDAO;
-import com.sanjeevni.modal.vendorDTO;
+import com.vendor.model.VendorDAO;
+import com.vendor.model.VendorDTO;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,8 +53,8 @@ public class AdminLogin extends HttpServlet {
             System.out.println("" + b);
             if (b) {
                 session.setAttribute("email", email);
-                vendorDTO vdto = new vendorDTO();
-                List<vendorDAO> vdao = vdto.vendorApproval();
+                VendorDTO vdto = new VendorDTO();
+                List<VendorDAO> vdao = vdto.vendorApproval();
                 System.out.println("asdfag : "+vdao.size());
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);

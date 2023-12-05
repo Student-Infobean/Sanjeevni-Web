@@ -5,8 +5,9 @@
 package com.sanjeevni.controller;
 
 import com.UserModul.service.GEMailSender;
-import com.sanjeevni.modal.vendorDAO;
-import com.sanjeevni.modal.vendorDTO;
+
+import com.vendor.model.VendorDAO;
+import com.vendor.model.VendorDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -44,10 +45,10 @@ public class Approve extends HttpServlet {
             if(process.equals("confirm")){
                 int id = Integer.parseInt(request.getParameter("approval"));
                 System.out.println("asdg: "+id);
-                vendorDTO vdto = new vendorDTO();
+                VendorDTO vdto = new VendorDTO();
                 boolean b = vdto.updateApproval(id);
                 if(b){
-                    List<vendorDAO> vdao = vdto.vendorApproval();
+                    List<VendorDAO> vdao = vdto.vendorApproval();
                 System.out.println("asdfag : "+vdao.size());
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);
@@ -77,10 +78,10 @@ public class Approve extends HttpServlet {
             }else if(process.equals("delete")){
                 int id = Integer.parseInt(request.getParameter("delete"));
                 System.out.println("asdgsdfg: "+id);
-                vendorDTO vdto = new vendorDTO();
+                VendorDTO vdto = new VendorDTO();
                 boolean b = vdto.deleteId(id);
                 if(b){
-                    List<vendorDAO> vdao = vdto.vendorApproval();
+                    List<VendorDAO> vdao = vdto.vendorApproval();
                 System.out.println("asdfag : "+vdao.size());
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);
