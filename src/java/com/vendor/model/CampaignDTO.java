@@ -9,8 +9,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -44,13 +48,53 @@ public class CampaignDTO {
 
     return campaignList;
 }
-     public boolean CampaignsInsert(CampaignDAO cdao) throws SQLException {
+   public List<CampaignDAO> getAllCampaignsDate() {
+        List<CampaignDAO> campaignList = new ArrayList<>();
+
+        try (Connection con = DBCon.DBConnnection();
+             PreparedStatement ps = con.prepareStatement("SELECT * FROM campaigndetails");
+             ResultSet rs = ps.executeQuery()) {
+
+            // Get the current date
+            Date currentDate = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+            while (rs.next()) {
+                CampaignDAO campaign = new CampaignDAO();
+                campaign.setCamp_id(rs.getInt("campaignID"));
+                campaign.setVendor_Id(rs.getInt("vendor_Id"));
+                campaign.setMaximum_appointment(rs.getInt("maximum_appointment"));
+                campaign.setName(rs.getString("name"));
+                campaign.setEmail(rs.getString("email"));
+                campaign.setAddress(rs.getString("address"));
+                campaign.setCampaign_Date(rs.getDate("Campaign_Date"));
+                campaign.setImage(rs.getString("image"));
+
+                // Check if the campaign is upcoming
+                Date campaignDate = campaign.getCampaign_Date();
+                if (campaignDate != null && campaignDate.after(currentDate)) {
+                    campaignList.add(campaign);
+                }
+            }
+
+        } catch (SQLException e) {
+            // Log the exception or handle it more appropriately
+            e.printStackTrace(); // Logging or replace with appropriate handling
+        }
+
+        return campaignList;
+    }
+     public boolean CampaignsInsert(CampaignDAO cdao)  {
     boolean b = false;
     Connection con = null;
     PreparedStatement ps = null;
 
     try {
-        con = DBCon.DBConnnection();
+        try {
+            con = DBCon.DBConnnection();
+        } catch (SQLException ex) {
+            Logger.getLogger(CampaignDTO.class.getName()).log(Level.SEVERE, null, ex);
+        }
         String query = "INSERT INTO campaigndetails (name, email, maximum_appointment, Campaign_Date, Address, vendor_Id , image) VALUES (?, ?, ?, ?, ?, ?, ? )";
         ps = con.prepareStatement(query);
         ps.setString(1, cdao.getName());
@@ -65,7 +109,9 @@ public class CampaignDTO {
         if (rowsAffected > 0) {
             b = true;
         }
-    } finally {
+    }  catch (SQLException ex) {
+           ex.printStackTrace();
+       } finally {
         // Close resources in a finally block to ensure they are always closed
         if (ps != null) {
 //            ps.close();

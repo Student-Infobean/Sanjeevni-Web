@@ -6,6 +6,8 @@ package com.sanjeevni.controller;
 
 import com.sanjeevni.modal.UserDAO;
 import com.sanjeevni.modal.UserDTO;
+import com.vendor.model.CampaignDAO;
+import com.vendor.model.CampaignDTO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -13,6 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 //import statiname;
 
 /**
@@ -56,7 +59,9 @@ public class LoginController extends HttpServlet {
                 session.setAttribute("dob", udao.getDob());
                 session.setAttribute("address", udao.getAddres());
                 session.setAttribute("udao", udao);
-
+                CampaignDTO cdto = new CampaignDTO();
+                List<CampaignDAO> cdao = cdto.getAllCampaignsDate();
+                session.setAttribute("Getbydate",cdao);
 //             session.setAttribute("id", udao.getId());
             } else {
                 response.sendRedirect("./view/LoginController.jsp");

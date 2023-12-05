@@ -4,6 +4,10 @@
         <servlet-name>LogOut</servlet-name>
         <servlet-class>com.sanjeevni.controller.LogOut</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Approve</servlet-name>
+        <servlet-class>com.sanjeevni.controller.Approve</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LogOut</servlet-name>
         <url-pattern>/LogOut</url-pattern>
@@ -80,36 +84,40 @@
         <servlet-name>SearchServlet</servlet-name>
         <url-pattern>/SearchServlet</url-pattern>
     </servlet-mapping>
-       <servlet>
-<servlet-name>RegistrationController</servlet-name>
-<servlet-class>com.sanjeevni.controller.RegistrationController</servlet-class>
-</servlet>
-<servlet>
-<servlet-name>LoginController</servlet-name>
-<servlet-class>com.sanjeevni.controller.LoginController</servlet-class>
-</servlet>
-<servlet>
-<servlet-name>UpdateController</servlet-name>
-<servlet-class>com.sanjeevni.controller.UpdateController</servlet-class>
-</servlet>
-<servlet>
-<servlet-name>OtpController</servlet-name>
-<servlet-class>com.sanjeevni.controller.OtpController</servlet-class>
-</servlet>
-<servlet-mapping>
-<servlet-name>RegistrationController</servlet-name>
-<url-pattern>/RegistrationController</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-<servlet-name>LoginController</servlet-name>
-<url-pattern>/LoginController</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-<servlet-name>UpdateController</servlet-name>
-<url-pattern>/UpdateController</url-pattern>
-</servlet-mapping>
-<servlet-mapping>
-<servlet-name>OtpController</servlet-name>
-<url-pattern>/OtpController</url-pattern>
-</servlet-mapping>
+    <servlet>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>com.sanjeevni.controller.RegistrationController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.sanjeevni.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateController</servlet-name>
+        <servlet-class>com.sanjeevni.controller.UpdateController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OtpController</servlet-name>
+        <servlet-class>com.sanjeevni.controller.OtpController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/RegistrationController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateController</servlet-name>
+        <url-pattern>/UpdateController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OtpController</servlet-name>
+        <url-pattern>/OtpController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Approve</servlet-name>
+        <url-pattern>/Approve</url-pattern>
+    </servlet-mapping>
 </web-app>
