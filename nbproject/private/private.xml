@@ -12,25 +12,14 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/LoginController.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Desktop.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/UserDAO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/CampaignViewDTO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Dashboard.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/RegistrationController.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/UserDTO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Login.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/CampaignDTO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Dementia.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdminCount.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/CampVendors.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/UpdateController.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorRegistrationTask.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/RemoveCampaignServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/VendorDAO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/VendorRegistration.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdmindashBoard.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/LogOut.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Registration.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/CampaignDAO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/UserDetails.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/CampaignViewDAO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/UserDTO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/VendorDTO.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/CampaignView.java</file>
         </group>
     </open-files>
