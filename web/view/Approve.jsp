@@ -1,12 +1,13 @@
 <%-- 
-    Document   : AdmindashBoard
-    Created on : 30-Nov-2023, 3:53:08 pm
+    Document   : Approve
+    Created on : 04-Dec-2023, 11:56:14 pm
     Author     : hp
 --%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.*" %>
+<%@ page import="com.sanjeevni.modal.*" %>
 <%@ page import="com.vendor.model.*" %>
 <%@ page import="jakarta.servlet.*" %>
 <!DOCTYPE html>
@@ -185,35 +186,41 @@
     <main id="main" class="main">
       <div class="container mt-5">
 
-        <center><h2 style="margin: 40px 0px; color: #FFC107;">Bookings </h2></center>
+        <center><h2 style="margin: 40px 0px; color: #FFC107;">Request Pending </h2></center>
         <table class="table w-100 table table-hover table-bordered border" align="center" >
           <table class='table table-bodered table-hover table-responsive'>
         <tr>
             <th>Name</th>
             <th>Email</th>
-            <th>CampaignDate</th>
+            <th>Phone</th>
             <th>Address</th>
-            <th>VendorId</th>
+            
             
         </tr>
         <%
-            ArrayList <CampaignDAO> camp = (ArrayList<CampaignDAO>)session.getAttribute("campaign");
+            ArrayList <VendorDAO> camp = (ArrayList<VendorDAO>)session.getAttribute("obj");
             if(camp!=null){
-            for(CampaignDAO c:camp){
-                CampaignDAO cdao = c;
+            for(VendorDAO c:camp){
+                VendorDAO cdao = c;
         %>
         <tr>
             <td><%= cdao.getName() %></td>
             <td><%= cdao.getEmail() %></td>
            
-            <td><%= cdao.getCampaign_Date() %></td>
+            <td><%= cdao.getPhone() %></td>
             <td><%= cdao.getAddress() %></td>
-            <td><%= cdao.getVendor_Id()%></td>
+            
              <td>
-                     <form  action="..//CampaignView">
-                        <input type="hidden"  value="<%= cdao.getCamp_id()%>" name="deleteEmail">
+                     <form  action="..//Approve">
+                         <input type="hidden"  value="<%= cdao.getVendor_id()%>" name="approval">
                        <!-- Button trigger modal -->
-                       <button  class="btn btn-outline-danger"  value="delete" name="showcampaign">
+                       <input type="hidden"  value="<%= cdao.getEmail()%>" name="emailforsend">
+                       <button  class="btn btn-outline-success"  value="confirm" name="confirm">
+                      Approve
+                    </button>
+                        <input type="hidden"  value="<%= cdao.getVendor_id()%>" name="delete">
+                       <!-- Button trigger modal -->
+                       <button  class="btn btn-outline-danger"  value="delete" name="confirm">
                       Delete
                     </button>
 
@@ -228,6 +235,13 @@
             } 
         %>
     </table>
+        <% String message = (String)session.getAttribute("message");
+            if(message!=null){
+            %>
+            <span style="color: red"><%= message%></span>
+            <%}else{%>
+            <span></span>
+            <%}%>   
     <%
                 }
                 // Set data in the session if needed

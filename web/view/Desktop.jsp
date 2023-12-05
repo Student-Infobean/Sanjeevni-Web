@@ -1,6 +1,6 @@
 <%-- 
     Document   : Desktop
-    Created on : Nov 27, 2023, 11:13:34 PM
+    Created on : Nov 27, 2023, 11:13:34?PM
     Author     : Lenovo
 --%>
 
@@ -89,8 +89,13 @@
 						<a class="nav-link" href="">Language</a>
 					</li>
 				</ul>
+                            
 			</div>
+                        
 		</div>
+       
+                  
+                </span>
 	</nav>
 	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
 		<div class="carousel-indicators">
@@ -603,7 +608,7 @@
             </div>
         </div>
         <div class="container-fluid copyright-section bg-dark ">
-            <p class="p-0 bg-dark text-white p-3 text-center">Copyright <a href="#" class="text-white">© CODE4EDUCATION.</a> All Rights Reserved</p>
+            <p class="p-0 bg-dark text-white p-3 text-center">Copyright <a href="#" class="text-white">� CODE4EDUCATION.</a> All Rights Reserved</p>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

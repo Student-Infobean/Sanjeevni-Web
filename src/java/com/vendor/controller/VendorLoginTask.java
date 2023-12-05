@@ -27,6 +27,7 @@ public class VendorLoginTask extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
            String email=request.getParameter("email");
            String password=request.getParameter("password");
+           HttpSession session = request.getSession();
            VendorDAO vdao=new VendorDAO();
            vdao.setEmail(email);
            vdao.setPassword(password);
@@ -34,12 +35,13 @@ public class VendorLoginTask extends HttpServlet {
             
            VendorDTO vdto=new VendorDTO();
            boolean b=vdto.venLogin(vdao);
-          
+            System.out.println("asdfasd :"+b);
            if(b){
-                HttpSession session=request.getSession();
+               
                 session.setAttribute("vdao",vdao);
                 response.sendRedirect("VendorHomePage.jsp");     
            }else {
+               session.setAttribute("message",vdao.getMessage());
                 response.sendRedirect("VendorLogin.jsp");
                 
                 

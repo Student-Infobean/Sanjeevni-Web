@@ -11,6 +11,7 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/UpdateController.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorRegistrationTask.java</file>
@@ -22,5 +23,8 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/VendorDTO.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/CampaignView.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> 4db90c9c11827a9679a26618205dc2fd48d84efa
     </open-files>
 </project-private>

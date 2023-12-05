@@ -1,6 +1,6 @@
 <%-- 
     Document   : VendorLogin
-    Created on : 01-Dec-2023, 1:08:52 am
+    Created on : 01-Dec-2023, 1:08:52?am
     Author     : T460
 --%>
 
@@ -214,6 +214,13 @@
                     <label for="remember-me">Remember me </label>
                 </div>
             </div>
+            <% String message = (String)session.getAttribute("message");
+            if(message!=null){
+            %>
+            <span style="color: red"><%= message%></span>
+            <%}else{%>
+            <span></span>
+            <%}%>
             <div class="field">
                 <input type="submit" value="Login">
             </div>

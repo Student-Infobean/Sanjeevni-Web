@@ -48,6 +48,36 @@ public class vendorDTO {
         }
         return lpd;
     }
+    public List<vendorDAO> vendorApproval() {
+        List<vendorDAO> lpd = new ArrayList<>();
+        Connection con = null;
+
+        try {
+            con = GetConnection.getConnection();
+            if (con != null) {
+                String sql = "select * from vendorDetails where approval=0";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ResultSet rs = ps.executeQuery();
+
+                while (rs.next()) {
+                    vendorDAO dao = new vendorDAO();
+                    dao.setVendorId(rs.getInt("vendor_id"));
+                    dao.setName(rs.getString("Name"));
+                    dao.setEmail(rs.getString("email"));
+                    dao.setPhone(rs.getString("phone"));
+
+                    dao.setAddress(rs.getString("address"));
+                    dao.setImage(rs.getBytes("campaignPhoto"));
+                    lpd.add(dao);
+
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println("" + e);
+        }
+        return lpd;
+    }
 
     public boolean deleteId(int id) {
         boolean b = false;
@@ -71,6 +101,39 @@ public class vendorDTO {
         }
         return b;
     }
+    public boolean updateApproval(int id) {
+    boolean success = false;
+    Connection con = null;
+
+    try {
+        con = GetConnection.getConnection();
+        if (con != null) {
+            String updateSql = "UPDATE vendorDetails SET approval=1 WHERE vendor_id=?";
+            PreparedStatement updatePs = con.prepareStatement(updateSql);
+            
+            updatePs.setInt(1, id);
+            int updateResult = updatePs.executeUpdate();
+
+            if (updateResult > 0) {
+                success = true;
+            }
+        }
+    } catch (Exception e) {
+        System.out.println("" + e);
+    } finally {
+        // Close resources in a finally block
+        try {
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    return success;
+}
+
 
     public int getVendorRowCount() {
         int rowCount = 0;
