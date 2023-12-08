@@ -11,20 +11,35 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
         <group>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/UpdateController.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorRegistrationTask.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/RemoveCampaignServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/vendorDTO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorPasswordUpdate.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Approve.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorLoginTask.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/service/EmailGeneration.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/service/GEMailSender.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/LikeServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorUpdateServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/VendorLogoutServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/VendorLogin.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/AdminDTO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/blogList.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/VendorDAO.java</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/VendorRegistration.jsp</file>
-            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/AdmindashBoard.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/BlogListServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/view/Dashboard.jsp</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/RegistrationController.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/AddBlog.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/modal/UserDTO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/AdminLogin.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/web/BlogDetails.jsp</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/model/VendorDTO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/Blog.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/AddBlogServlet.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/Approve.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/vendor/controller/SearchServlet.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/CampaignView.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Group_Project/src/java/com/sanjeevni/controller/OtpController.java</file>
         </group>
-=======
-        <group/>
->>>>>>> 4db90c9c11827a9679a26618205dc2fd48d84efa
     </open-files>
 </project-private>

@@ -4,7 +4,7 @@
  */
 package com.sanjeevni.controller;
 
-import com.UserModul.service.GEMailSender;
+import com.sanjeevni.service.GEMailSender;
 
 import com.vendor.model.VendorDAO;
 import com.vendor.model.VendorDTO;
@@ -45,14 +45,11 @@ public class Approve extends HttpServlet {
             if(process.equals("confirm")){
                 int id = Integer.parseInt(request.getParameter("approval"));
                 System.out.println("asdg: "+id);
-                VendorDTO vdto = new VendorDTO();
-                boolean b = vdto.updateApproval(id);
-                if(b){
-                    List<VendorDAO> vdao = vdto.vendorApproval();
-                System.out.println("asdfag : "+vdao.size());
-                session.setAttribute("size",vdao.size());
-                session.setAttribute("obj", vdao);
-                System.out.println("update go gya");
+               
+                
+               
+                
+                
                 String email = request.getParameter("emailforsend");
                 GEMailSender gm = new GEMailSender();
                 String to = email;
@@ -63,17 +60,26 @@ public class Approve extends HttpServlet {
             // made by sachin
                     boolean c = gm.sendEmail(to, from, subject, text);
                     if(c){
-                        session.setAttribute("message","Confirmation sent");
-                        response.sendRedirect("../view/AdmindashBoard.jsp");
-                    }
-                    else{
-                        session.setAttribute("message","Confirmation can't sent but vendor approved");
-                        response.sendRedirect("../view/AdmindashBoard.jsp");
-                    }
+                         VendorDTO vdto = new VendorDTO();
+                         boolean b = vdto.updateApproval(id);
+                          if(b){
+                                    List<VendorDAO> vdao = vdto.vendorApproval();
+                                    System.out.println("asdfag : "+vdao.size());
+                                    session.setAttribute("size",vdao.size());
+                                    session.setAttribute("obj", vdao);
+                                    System.out.println("update go gya");
+                                    session.setAttribute("message","Confirmation sent");
+                                    response.sendRedirect("../view/AdmindashBoard.jsp");
+                                }
+                    
 
                 
                     
                 }
+                    else{
+                        session.setAttribute("message", "NetWork Error");
+                        response.sendRedirect("../view/AdmindashBoard.jsp");
+                    }
                 
             }else if(process.equals("delete")){
                 int id = Integer.parseInt(request.getParameter("delete"));

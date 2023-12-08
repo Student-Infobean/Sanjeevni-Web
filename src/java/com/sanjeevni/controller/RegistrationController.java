@@ -7,7 +7,7 @@ package com.sanjeevni.controller;
 import com.sanjeevni.modal.UserDAO;
 import com.sanjeevni.modal.UserDTO;
 import com.sanjeevni.service.EmailGeneration;
-import com.UserModul.service.GEMailSender;
+import com.sanjeevni.service.GEMailSender;
 import javax.mail.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

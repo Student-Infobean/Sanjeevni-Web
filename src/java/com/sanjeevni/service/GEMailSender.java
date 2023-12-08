@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.UserModul.service;
+package com.sanjeevni.service;
 
 
 import javax.mail.Message;
@@ -27,9 +27,9 @@ public class GEMailSender {
         p.put("mail.smtp.starttls.enable", "true");
         p.put("mail.smtp.port", "587");
         p.put("mail.smtp.host", "smtp.gmail.com");
-         String user = "prajapatik1420@gmail.com";
+         String user = "sonampra07@gmail.com";
           System.out.println("Boolean : "+flag);
-         String password = "pqwggtyjsyaawoik";
+         String password = "milqhmyemdfceuds";
         //session object get
         Session session = Session.getInstance(p,new javax.mail.Authenticator() {
             @Override

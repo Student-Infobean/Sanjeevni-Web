@@ -1,7 +1,7 @@
 <%-- 
-    Document   : Desktop
-    Created on : Nov 27, 2023, 11:13:34 PM
-    Author     : dell
+   Document   : Desktop
+   Created on : Nov 27, 2023, 11:13:34 PM
+   Author     : dell
 --%>
 
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,407 +10,405 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <link rel="stylesheet" href="css/Home.css">
-   <link
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/Home.css">
+        <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
             />
-   <style>
-       * {
-		font-family: 'Montserrat', sans-serif;
-	}
-	.bg-light {
-		background-color: transparent !important;
-	}
-	.carousel-item {
-		height: 100vh;
-		min-height: 300px;
-	}
-	.carousel-caption {
-		bottom: 220px;
-	}
-	.carousel-caption h5 {
-		font-size: 45px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-top: 25px;
-	}
-	.carousel-caption p {
-		width: 60%;
-		margin: auto;
-		font-size: 18px;
-		line-height: 1.9;
-	}
-	.carousel-caption a {
-		text-transform: uppercase;
-		text-decoration: none;
-		background:  #1977cc;
-		padding: 10px 30px;
-		display: inline-block;
-		color: #000;
-		margin-top: 15px;
-	}
-	.navbar-nav a {
-		font-size: 15px;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-	.navbar-nav{
-		margin-right: -30px;
-		background-color: rgba(0,0,0,0.5);
-	}
-	.navbar-brand 
-	{
-		width: 25%;
-		/* background-color: rgba(0,0,0,0.5); */
-	}
-	.navbar-light .navbar-brand {
-		color: #fff;
-		font-size: 20px;
-		text-transform: uppercase;
-		font-weight: bold;
-		letter-spacing: 2px;
-	}
-	.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-		color: #fff;
-	}
-	.navbar-light .navbar-nav .nav-link {
-		color: #fff;
-	}
-	.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-		color: #fff;
-	}
-	.w-100 {
-		height: 100vh;
-	}
-	.navbar-toggler {
-		padding: 1px 5px;
-		font-size: 18px;
-		line-height: 0.3;
-		background: #fff;
-	}
-	@media only screen and (max-width: 767px) {
-		.navbar-nav {
-			text-align: center;
-			background: rgba(0, 0, 0, 0.5);
-		}
-		.carousel-caption {
-			bottom: 165px;
-		}
-		.carousel-caption h5 {
-			font-size: 17px;
-		}
-		.carousel-caption a {
-			padding: 10px 15px;
-			font-size: 15px;
-		}
-	}
-	   .btn {
-		background-color:#4285f4;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 800;
-            text-transform: uppercase;
-            position: relative;
-            border-radius: 0 !important;
-            border: none;
-            transition:all 0.3s ease 0s;
-        }
-        .btn:hover,
-        .btn.active:hover{
-            color: #ffffff;
-        }
-        .btn:before{
-            content: "";
-            position: absolute;
-            top: -7px;
-            left: 0;
-            background-color:#2E0014;
-            width: 30%;
-            height: 4px;
-            transition:all 0.3s ease 0s;
-        }
-        .btn:after{
-            content: "";
-            position: absolute;
-            bottom: -7px;
-			background-color: #F48224;
-            right: 0;
-            width: 30%;
-            height: 4px;
-            transition:all 0.3s ease 0s;
-        }
-        .btn:hover:before,
-        .btn:hover:after,
-        .btn.active:before,
-        .btn.active:after{
-            width: 100%;
-        }
-
-        @media screen and (max-width: 575px){
-            .btn{
-                margin-bottom: 50px !important;
+        <style>
+            * {
+                font-family: 'Montserrat', sans-serif;
             }
-        }
-		.features{
-			/* background:rgb(255, 247, 233); */
-		}
-		 /** Flatted button %placeholder **/
-		 .features {
-			padding-bottom: 30px;
-			margin-top: 30px;
-		  }
-		  
-		  .features .count-box {
-			background:rgb(255, 247, 233);
-			box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
-			padding: 30px;
-			width: 100%;
-		  }
-		  .features .count-box a {
-			font-weight: 600;
-			margin-top: 20px;
-			color: #7b7b7b;
-			font-size: 15px;
-			font-family: "Poppins", sans-serif;
-			transition: ease-in-out 0.3s;
-		  }
-		  .features .count-box a:hover{
-			color: #4285f4;
-		  }
-		  .features .count-box:hover{
-			transform: scale(0.7);
-		  }
-		.conntain  .icon{
-			align-items: center;
-			justify-content: center;
-		  width: 64px;
-		  height: 64px;
-		  border: 2px solid #8dc2f1;
-		  border-radius: 50px;
-		  transition: 0.5s;
-		}
-		  .conntain:hover .icon {
-			background: #3fbbc0;
-			/* border-color: #3fbbc0; */
-		  }
-		  .conntain:hover .icon i{
-			color: white;
-		  }
-		  .conntain .title {
-			margin-left: 85px;
-			font-weight: 700;
-			margin-bottom: 10px;
-			font-size: 18px;
-		  }
-		  
-		  .conntain  .title a {
-			color: #343a40;
-			transition: 0.3s;
-		  }
-		  
-		  .conntain  .title a:hover {
-			color: #1977cc;
-		  }
-		  .conntain .title {
-			margin-left: 85px;
-			margin-top: -40px;
-		  }
-		  
-		  .conntain .title a {
-			text-decoration: none;
-			color: #1977cc;
-		  }
-		  
-		  .conntain  .title a:hover {
-			color: red;
-		  }
-		.team_wrapper .card:hover{
-			-webkit-transform:translateY(-0.625rem);
-			transform:translateY(-0.625rem);
-		}
-		.hospitals{
-			margin: 0;
-			padding: 0;
-			min-height: 100vh;
-			background: #333;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-family: consolas;
-		}
-	
-		
-		.container .card{
-			position: relative;
-			cursor: pointer;
-		}
-		
-		.container .card .face{
-			width: 300px;
-			height: 200px;
-			transition: 0.5s;
-		}
-		
-		.container .card .face.face1{
-			position: relative;
-			background:rgb(230, 153, 20);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			z-index: 1;
-			transform: translateY(100px);
-		}
-		
-		.container .card:hover .face.face1{
-			background: #ff0057;
-			transform: translateY(0);
-		}
-		
-		.container .card .face.face1 .content1{
-			opacity: 0.12;
-			transition: 0.5s;
-		}
-		
-		.container .card:hover .face.face1 .content1{
-			opacity: 1;
-		}
-		
-		.container .card .face.face1 .content1 img{
-			max-width: 100px;
-		}
-		
-		.container .card .face.face1 .content h3{
-			margin: 10px 0 0;
-			padding: 0;
-			color: #fff;
-			margin-left: 20px;
-			text-align: center;
-			font-size: 1.5em;
-		}
-		
-		.container .card .face.face2{
-			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-			transform: translateY(-100px);
-		}
-		
-		.container .card:hover .face.face2{
-			transform: translateY(0);
-		}
-		
-		.container .card .face.face2 .content1 p{
-			margin: 0;
-			padding: 0;
-		}
-		
-		.container .card .face.face2 .content1 a{
-			margin: 15px 0 0;
-			display:  inline-block;
-			text-decoration: none;
-			font-weight: 900;
-			color: #333;
-			padding: 5px;
-			border: 1px solid #333;
-		}
-		
-		.container .card .face.face2 .content1 a:hover{
-			background: #333;
-			color: #fff;
-		}
-		@media screen and (max-width:360px) {
-			
-		}
-		
-       </style>
-</head>
+            .bg-light {
+                background-color: transparent !important;
+            }
+            .carousel-item {
+                height: 100vh;
+                min-height: 300px;
+            }
+            .carousel-caption {
+                bottom: 220px;
+            }
+            .carousel-caption h5 {
+                font-size: 45px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 25px;
+            }
+            .carousel-caption p {
+                width: 60%;
+                margin: auto;
+                font-size: 18px;
+                line-height: 1.9;
+            }
+            .carousel-caption a {
+                text-transform: uppercase;
+                text-decoration: none;
+                background:  #1977cc;
+                padding: 10px 30px;
+                display: inline-block;
+                color: #000;
+                margin-top: 15px;
+            }
+            .navbar-nav a {
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .navbar-nav{
+                margin-right: -30px;
+                background-color: rgba(0,0,0,0.5);
+            }
+            .navbar-brand
+            {
+                width: 25%;
+                /* background-color: rgba(0,0,0,0.5); */
+            }
+            .navbar-light .navbar-brand {
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+                color: #fff;
+            }
+            .navbar-light .navbar-nav .nav-link {
+                color: #fff;
+            }
+            .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+                color: #fff;
+            }
+            .w-100 {
+                height: 100vh;
+            }
+            .navbar-toggler {
+                padding: 1px 5px;
+                font-size: 18px;
+                line-height: 0.3;
+                background: #fff;
+            }
+            @media only screen and (max-width: 767px) {
+                .navbar-nav {
+                    text-align: center;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                .carousel-caption {
+                    bottom: 165px;
+                }
+                .carousel-caption h5 {
+                    font-size: 17px;
+                }
+                .carousel-caption a {
+                    padding: 10px 15px;
+                    font-size: 15px;
+                }
+            }
+            .btn {
+                background-color:#4285f4;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 800;
+                text-transform: uppercase;
+                position: relative;
+                border-radius: 0 !important;
+                border: none;
+                transition:all 0.3s ease 0s;
+            }
+            .btn:hover,
+            .btn.active:hover{
+                color: #ffffff;
+            }
+            .btn:before{
+                content: "";
+                position: absolute;
+                top: -7px;
+                left: 0;
+                background-color:#2E0014;
+                width: 30%;
+                height: 4px;
+                transition:all 0.3s ease 0s;
+            }
+            .btn:after{
+                content: "";
+                position: absolute;
+                bottom: -7px;
+                background-color: #F48224;
+                right: 0;
+                width: 30%;
+                height: 4px;
+                transition:all 0.3s ease 0s;
+            }
+            .btn:hover:before,
+            .btn:hover:after,
+            .btn.active:before,
+            .btn.active:after{
+                width: 100%;
+            }
 
-<body>
-    <%  
-    try {
-        response.setHeader("Cache-Control", "NO-Cache");
-        response.setHeader("Cache-Control", "NO-Store");
-        UserDAO dao=(UserDAO)session.getAttribute("udao");
-        int userid=dao. getUserID();
-        String name=dao.getName();
-        String email=dao.getEmail();
-        String phone=dao.getPhone();
-        String address=dao.getAddres();
-        String dob=dao.getDob();
+            @media screen and (max-width: 575px){
+                .btn{
+                    margin-bottom: 50px !important;
+                }
+            }
+            .features{
+                /* background:rgb(255, 247, 233); */
+            }
+            /** Flatted button %placeholder **/
+            .features {
+                padding-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            .features .count-box {
+                background:rgb(255, 247, 233);
+                box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                width: 100%;
+            }
+            .features .count-box a {
+                font-weight: 600;
+                margin-top: 20px;
+                color: #7b7b7b;
+                font-size: 15px;
+                font-family: "Poppins", sans-serif;
+                transition: ease-in-out 0.3s;
+            }
+            .features .count-box a:hover{
+                color: #4285f4;
+            }
+            .features .count-box:hover{
+                transform: scale(0.7);
+            }
+            .conntain  .icon{
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 64px;
+                border: 2px solid #8dc2f1;
+                border-radius: 50px;
+                transition: 0.5s;
+            }
+            .conntain:hover .icon {
+                background: #3fbbc0;
+                /* border-color: #3fbbc0; */
+            }
+            .conntain:hover .icon i{
+                color: white;
+            }
+            .conntain .title {
+                margin-left: 85px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            .conntain  .title a {
+                color: #343a40;
+                transition: 0.3s;
+            }
+
+            .conntain  .title a:hover {
+                color: #1977cc;
+            }
+            .conntain .title {
+                margin-left: 85px;
+                margin-top: -40px;
+            }
+
+            .conntain .title a {
+                text-decoration: none;
+                color: #1977cc;
+            }
+
+            .conntain  .title a:hover {
+                color: red;
+            }
+            .team_wrapper .card:hover{
+                -webkit-transform:translateY(-0.625rem);
+                transform:translateY(-0.625rem);
+            }
+            .hospitals{
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: consolas;
+            }
+
+
+            .container .card{
+                position: relative;
+                cursor: pointer;
+            }
+
+            .container .card .face{
+                width: 300px;
+                height: 200px;
+                transition: 0.5s;
+            }
+
+            .container .card .face.face1{
+                position: relative;
+                background:rgb(230, 153, 20);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                transform: translateY(100px);
+            }
+
+            .container .card:hover .face.face1{
+                background: #ff0057;
+                transform: translateY(0);
+            }
+
+            .container .card .face.face1 .content1{
+                opacity: 0.12;
+                transition: 0.5s;
+            }
+
+            .container .card:hover .face.face1 .content1{
+                opacity: 1;
+            }
+
+            .container .card .face.face1 .content1 img{
+                max-width: 100px;
+            }
+
+            .container .card .face.face1 .content h3{
+                margin: 10px 0 0;
+                padding: 0;
+                color: #fff;
+                margin-left: 20px;
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            .container .card .face.face2{
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+                transform: translateY(-100px);
+            }
+
+            .container .card:hover .face.face2{
+                transform: translateY(0);
+            }
+
+            .container .card .face.face2 .content1 p{
+                margin: 0;
+                padding: 0;
+            }
+
+            .container .card .face.face2 .content1 a{
+                margin: 15px 0 0;
+                display:  inline-block;
+                text-decoration: none;
+                font-weight: 900;
+                color: #333;
+                padding: 5px;
+                border: 1px solid #333;
+            }
+
+            .container .card .face.face2 .content1 a:hover{
+                background: #333;
+                color: #fff;
+            }
+            @media screen and (max-width:360px) {
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <%  
+        try {
+            response.setHeader("Cache-Control", "NO-Cache");
+            response.setHeader("Cache-Control", "NO-Store");
+            UserDAO dao=(UserDAO)session.getAttribute("udao");
+            int userid=dao. getUserID();
+            String name=dao.getName();
+            String email=dao.getEmail();
+            String phone=dao.getPhone();
+            String address=dao.getAddres();
+            String dob=dao.getDob();
         
-        String profile=dao.getProfilephoto();
-        String pass=dao.getPassword();
-        System.out.println(dob);
+            String profile=dao.getProfilephoto();
+            String pass=dao.getPassword();
+            System.out.println(dob);
         
         
         
-%>
+        %>
 
-    <!--hjgjhghjghjghjghjg-->
-<!--    this comment by kriti-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img class="img-fluid w-75" src="images/logo.png" alt=""></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav   mb-2 mb-lg-0 " >
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="HealthH.jsp">Health Welfare</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Ecom.jsp">Buy & Sells</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="Doctor.jsp">Doctors</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="Ambulance.jsp">Ambulance</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="Campaign.jsp">Campaign</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="proje_1.jsp">Hospital</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="">Logout</a>
-					</li>
-                                        <li class="nav-item">
-						<a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">Profile</a>
-					</li>
-                     <li class="nav-item">
-						<a class="nav-link" href="ABOUT_US.jsp">About Us</a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="">Language</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+        <!--hjgjhghjghjghjghjg-->
+        <!--    this comment by kriti-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="img-fluid w-75" src="images/logo.png" alt=""></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav   mb-2 mb-lg-0 " >
+                        <li class="nav-item">
+                            <a class="nav-link" href="Desktop.jsp">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HealthH.jsp">Health Welfare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ecom.jsp">Buy & Sells</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Doctor.jsp">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ambulance.jsp">Ambulance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Campaign.jsp">Campaign</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proje_1.jsp">Hospital</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ABOUT_US.jsp">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Language</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<!--profile-->
-
-
+        <!--profile-->
 
 
 
@@ -418,212 +416,221 @@
 
 
 
-<!-- Button trigger modal -->
-<!--<button type="button" class="btn btn-primary" >
-  Launch static backdrop modal
-</button>-->
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">USER PROFILE</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <div class="offcanvas-body">
-           
-                    <center>
-                        <fieldset>
-                            <legend>
-                                <font face="cursive" size="6" color="white">UPDATE</font>
-                            </legend>
-                            <i id="logo1" class="fa-solid fa-user"></i>
-                            <div class="offcanvas-body">
-                                <h2>Profile</h2>
-
-                                <div class="card-body">
-                                    <form action="../UpdateController">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            value="<%= session.getAttribute("name") %>"
-                                                            id="Myname"
-                                                            disabled
-                                                            name ="Myname"
-                                                            />
-                                                        <div id="udisplay"></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Mobile</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            value="<%= session.getAttribute("phone") %>"
-                                                            id="mobile"
-                                                            disabled
-                                                            name="mobile"
-                                                            />
-                                                        <div id="mdisplay"></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Email</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="email"
-                                                            value="<%= session.getAttribute("email") %>"
-                                                            id="email"
-                                                            disabled
-                                                            name="email"
-                                                            />
-                                                        <div id="edisplay"></div>
-                                                    </td>
-                                                </tr>
-                                                 <tr>
-                                                    <td>DOB</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            value="<%= session.getAttribute("dob") %>"
-                                                            id="email"
-                                                            disabled
-                                                            name="dob"
-                                                            />
-                                                        <div id="edisplay"></div>
-                                                    </td>
-                                                </tr>
-                                                 <tr>
-                                                    <td>ADDRESS</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            value="<%= session.getAttribute("address") %>"
-                                                            id="email"
-                                                            disabled
-                                                            name="address"
-                                                            />
-                                                        <div id="edisplay"></div>
-                                                    </td>
-                                                </tr>
-                                                 <tr>
-                                                    <td>Profile</td>
-                                                    <td>:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            value="<%= session.getAttribute("profile_photo") %>"
-                                                            id="email"
-                                                            disabled
-                                                            name="profile"
-                                                            />
-                                                        <div id="edisplay"></div>
-                                                    </td>
-                                                </tr>
-<!--                                                <tr style="display: none" id="btn">
-                                                    <td><input type="submit" value="Save" /></td>
-                                                </tr>-->
-                                            </tbody>
-                                        </table>
-                                    </form>
-                                             <li class="nav-item">
-                                             <a type="button" class="nav-link ms-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                                                Update
-                                                 </a>
-                                                 </li>
-                                    <!--<button id="enableButton">Edit</button>-->
-                                </div>
-                            </div>
-                            </div>
-                          </center>
-                        </fieldset>                                  
-    <br>
-    
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!--<button type="button" class="btn btn-primary">Understood</button>-->
-      </div>
-    </div>
-  </div>
-</div>
 
 
+        <!-- Button trigger modal -->
+        <!--<button type="button" class="btn btn-primary" >
+          Launch static backdrop modal
+        </button>-->
 
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">USER PROFILE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="offcanvas-body">
 
-<!-- Modal -->
-        <form onsubmit=" return validate()" action="..//UpdateController" class="form" method="post">
-            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered  modal-fullscreen-md-down modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Update</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <center>
+                                <fieldset>
+                                    <legend>
+                                        <font face="cursive" size="6" color="white">UPDATE</font>
+                                    </legend>
+                                    <i id="logo1" class="fa-solid fa-user"></i>
+                                    <div class="offcanvas-body">
+                                        <h2>Profile</h2>
+
+                                        <div class="card-body">
+                                            <form action="../UpdateController">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="text"
+                                                                    value="<%= session.getAttribute("name") %>"
+                                                                    id="Myname"
+                                                                    disabled
+                                                                    name ="Myname"
+                                                                    />
+                                                                <div id="udisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mobile</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="text"
+                                                                    value="<%= session.getAttribute("phone") %>"
+                                                                    id="mobile"
+                                                                    disabled
+                                                                    name="mobile"
+                                                                    />
+                                                                <div id="mdisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Email</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="email"
+                                                                    value="<%= session.getAttribute("email") %>"
+                                                                    id="email"
+                                                                    disabled
+                                                                    name="email"
+                                                                    />
+                                                                <div id="edisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>DOB</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="text"
+                                                                    value="<%= session.getAttribute("dob") %>"
+                                                                    id="email"
+                                                                    disabled
+                                                                    name="dob"
+                                                                    />
+                                                                <div id="edisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ADDRESS</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="text"
+                                                                    value="<%= session.getAttribute("address") %>"
+                                                                    id="email"
+                                                                    disabled
+                                                                    name="address"
+                                                                    />
+                                                                <div id="edisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Profile</td>
+                                                            <td>:</td>
+                                                            <td>
+                                                                <input
+                                                                    type="text"
+                                                                    value="<%= session.getAttribute("profile_photo") %>"
+                                                                    id="email"
+                                                                    disabled
+                                                                    name="profile"
+                                                                    />
+                                                                <div id="edisplay"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <!--                                                <tr style="display: none" id="btn">
+                                                                                                            <td><input type="submit" value="Save" /></td>
+                                                                                                        </tr>-->
+                                                    </tbody>
+                                                </table>
+                                            </form>
+                                            <li class="nav-item">
+                                                <a type="button" class="nav-link ms-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                                    Update
+                                                </a>
+                                            </li>
+                                            <!--<button id="enableButton">Edit</button>-->
+                                        </div>
+                                    </div>
+                                    </div>
+                            </center>
+                            </fieldset>                                  
+                            <br>
+
                         </div>
-
-                        <div class="modal-body">
-                            
-                            <div class="input-box">
-                                <label>Full Name</label>
-                                <input onclick="checkName()" onfocus="checkName()" onkeyup="checkName()" type="text" id="name" name="name" placeholder="Enter your name" value="<%= name%>">
-                                <span id="ndisplay" style="color:red;"></span>
-                            </div>
-                            <div class="input-box">
-                                <label>EMAIL</label>
-                                <input onclick="checkEmail()"  type="text" id="email" name="email" placeholder="Enter email name" value="<%= email %>">
-                                <span id="fdisplay" style="color:red;"></span>
-                            </div>
-                            <div class="column">
-                                <div class="input-box">
-                                    <label>PROFILE</label>
-                                    <input type="text"  name="profile" placeholder="Enter profile photo Name" value="<%= profile%>" >
-                                </div>
-                                <div class="input-box">
-                                    <label>ADDRESS</label>
-                                    <input   type="text" id="add" name="address" placeholder="Enter Address" value="<%= address%>">
-                                    <span id="" style="color:red;"></span>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="input-box">
-                                    <label> MOBILE</label>
-                                    <input onclick="checkMobile()" onkeyup="checkMobile()" type="text" id="mobile" name="mobile" maxlength="10" placeholder="Enter 10-digit Mobile Number" value="<%= phone %>">
-                                    <span id="mdisplay" style="color:red;"></span>
-                                </div>
-                                <div class="input-box">
-                                    <label>Birth Date</label>
-                                    <input type="date" onmouseout="checkdate()" id="Date"  name="dob" placeholder="Enter birth date" value="<%= dob%>">
-                                </div>
-                            </div>
-
-                            <button class="btn1" type="submit">Submit</button>
-
-
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <!--<button type="button" class="btn btn-primary">Understood</button>-->
                         </div>
                     </div>
                 </div>
-            </div>  
-        </form>
+            </div>
+
+
+
+
+            <!-- Modal -->
+            <form onsubmit=" return validate()" action="..//UpdateController" class="form" method="post">
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered  modal-fullscreen-md-down modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Update</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <div class="input-box">
+                                    <label>Full Name</label>
+                                    <input onclick="checkName()" onfocus="checkName()" onkeyup="checkName()" type="text" id="name" name="name" placeholder="Enter your name" value="<%= name%>">
+                                    <span id="ndisplay" style="color:red;"></span>
+                                </div>
+                                <div class="input-box">
+                                    <label>EMAIL</label>
+                                    <input onclick="checkEmail()"  type="text" id="email" name="email" placeholder="Enter email name" value="<%= email %>">
+                                    <span id="fdisplay" style="color:red;"></span>
+                                </div>
+                                <div class="column">
+                                    <div class="input-box">
+                                        <label>PROFILE</label>
+                                        <input type="text"  name="profile" placeholder="Enter profile photo Name" value="<%= profile%>" >
+                                    </div>
+                                    <div class="input-box">
+                                        <label>ADDRESS</label>
+                                        <input   type="text" id="add" name="address" placeholder="Enter Address" value="<%= address%>">
+                                        <span id="" style="color:red;"></span>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="input-box">
+                                        <label> MOBILE</label>
+                                        <input onclick="checkMobile()" onkeyup="checkMobile()" type="text" id="mobile" name="mobile" maxlength="10" placeholder="Enter 10-digit Mobile Number" value="<%= phone %>">
+                                        <span id="mdisplay" style="color:red;"></span>
+                                    </div>
+                                    <div class="input-box">
+                                        <label>Birth Date</label>
+                                        <input type="date" onmouseout="checkdate()" id="Date"  name="dob" placeholder="Enter birth date" value="<%= dob%>">
+                                    </div>
+                                </div>
+
+                                <button class="btn1" type="submit">Submit</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </form>
+
+<%
+    }
+    catch(Exception ex)
+{
+    System.out.println(ex);
+}
+    
+%>
 
 
 
 
 
-
-
-<!--profile-->
-	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+            <!--profile-->
+          <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
 		<div class="carousel-indicators">
 			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
 		</div>
@@ -934,16 +941,6 @@
                 </div>
             </div>
         </div>
-                        
-        <!--modal-->
-        
-        
-        
-        
-        
-        
-        
-        
         <div class="text-center my-5">
             <div class="btn btn-primary">View More</div>
         </div>
@@ -1025,7 +1022,38 @@
         <div class="text-center my-5">
             <div class="btn btn-primary">View More</div>
         </div>
+        <!--blogs-->
+        
        
+<div class="card-container">
+    <c:forEach var="blog" items="${blogs}">
+        <div class="card text-part-A5">
+            <div class="card-image">
+                <img src="IMG/${blog.imageNumber}.jpg" alt="post an image with animation" title="post an image with animation" width="300" height="395" class="grow" />
+            </div>
+
+            <!-- other card content ... -->
+
+            <div class="like-section">
+                <form action="LikeServlet" method="post">
+                    <input type="hidden" name="blogId" value="${blog.blogId}">
+                    <button type="submit" class="button-80">Like</button>
+                </form>
+                <div class="like-count">
+                    Likes: ${blogModel.getLikeCount(blog.blogId)}
+                </div>
+            </div>
+
+            <a href="BlogDetails.jsp?blogId=${blog.blogId}" class="read-more-button">Read More</a>
+        </div>
+    </c:forEach>
+</div>
+        
+        
+        
+        
+        
+          <!--blogs-->
         <div class="Camp ms-4">
             <div class="container my-5 mt-5">
                 <div class="text-center my-5 mt-5 mb-5 ">
@@ -1144,7 +1172,7 @@
             </div>
         </div>
         <div class="container-fluid copyright-section bg-dark ">
-            <p class="p-0 bg-dark text-white p-3 text-center">Copyright <a href="#" class="text-white">© CODE4EDUCATION.</a> All Rights Reserved</p>
+            <p class="p-0 bg-dark text-white p-3 text-center">Copyright <a href="#" class="text-white">� CODE4EDUCATION.</a> All Rights Reserved</p>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -1154,39 +1182,9 @@
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!--    <script>
+    <script>
         AOS.init();
-        
-    // Function to enable editing of input fields
-    function enableEditing() {
-    var Myname = document.getElementById("Myname");
-    var mobile = document.getElementById("mobile");
-    var email = document.getElementById("email");
-    var dob = document.getElementById("dob");
-    var address = document.getElementById("address");
-    var profile = document.getElementById("profile");
-    var btnRow = document.getElementById("btn");
-
-    Myname.disabled = false;
-    mobile.disabled = false;
-    email.disabled = false;
-    dob.disabled = false;
-    address.disabled = false;
-    profile.disabled = false;
-    btnRow.style.display = "table-row";
-
-    var enableButton = document.getElementById("enableButton");
-    enableButton.style.display = "none";
-}
-
-// Adding event listener to the "Edit" button
-var enableButton = document.getElementById("enableButton");
-enableButton.addEventListener("click", enableEditing);
-</script>-->
+    </script>
 </body>
 
 </html>
-<%} 
-catch(Exception e){
- out.print(e);
-}%>

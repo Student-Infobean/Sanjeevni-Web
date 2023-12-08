@@ -47,7 +47,7 @@
                             <a class="nav-link active text-white px-4 ms-5" aria-current="page" href="Desktop.jsp">Home</a>
                           </li>
                           <li class="nav-item fw-bold">
-                            <a class="nav-link active text-white px-4" aria-current="page" href="HeathH.jsp">Health Awareness</a>
+                            <a class="nav-link active text-white px-4" aria-current="page" href="HealthWelfare.jsp">Health Awareness</a>
                           </li>
                           <li class="nav-item fw-bold">
                             <a class="nav-link active text-white px-4" aria-current="page" href="mental_health.jsp">Mental Health</a>
@@ -68,7 +68,10 @@
                             <a class="nav-link active text-white px-4" aria-current="page" href="Fitness.jsp">Physical Fitness</a>
                           </li>
                           <li class="nav-item fw-bold">
-                            <a class="nav-link active text-white px-5" aria-current="page" href="#">Blogs</a>
+                            <a class="nav-link active text-white px-5" aria-current="page" href="..//AddBlog.jsp">Blogs</a>
+                          </li>
+                          <li class="nav-item fw-bold">
+                            <a class="nav-link active text-white px-5" aria-current="page" href="..//blogList.jsp">All Blogs</a>
                           </li>
                     </ul>
                   </div>

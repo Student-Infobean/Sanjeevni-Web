@@ -120,4 +120,37 @@
         <servlet-name>Approve</servlet-name>
         <url-pattern>/Approve</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AddBlogservlet</servlet-name>
+        <servlet-class>AddBlogservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BlogListServlet</servlet-name>
+        <servlet-class>BlogListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BlogList</servlet-name>
+        <servlet-class>BlogList</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LikeServlet</servlet-name>
+        <servlet-class>LikeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBlogservlet</servlet-name>
+        <url-pattern>/AddBlogservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BlogListServlet</servlet-name>
+        <url-pattern>/BlogListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BlogList</servlet-name>
+        <url-pattern>/BlogList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LikeServlet</servlet-name>
+        <url-pattern>/LikeServlet</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

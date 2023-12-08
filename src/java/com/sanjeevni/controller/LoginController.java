@@ -49,7 +49,7 @@ public class LoginController extends HttpServlet {
             boolean b = udto.login(udao);
             System.out.println("b.." + b);
             if (b) {
-                response.sendRedirect("../view/Das.jsp");
+                response.sendRedirect("view/Dashboard.jsp");
                 HttpSession session = request.getSession();
 
                 session.setAttribute("email", udao.getEmail());
@@ -64,7 +64,7 @@ public class LoginController extends HttpServlet {
                 session.setAttribute("Getbydate",cdao);
 //             session.setAttribute("id", udao.getId());
             } else {
-                response.sendRedirect("./view/LoginController.jsp");
+                response.sendRedirect("view/Login.jsp");
             }
 
         } catch (IOException e) {

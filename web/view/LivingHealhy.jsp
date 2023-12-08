@@ -265,16 +265,16 @@
                 <div class="col ">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-apple-whole" style="color: #f9fafb;"></i>
                     </div>
-                    <p><a href="">Food Calorie Calculator</a></p>
+                    <p><a href="FoodCalorieCalculator.jsp">Food Calorie Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon d-flex fs-3 "><i class="fa-solid fa-person-biking" style="color: #eaecf0;"></i>
                     </div>
-                    <p> <a href="">Fitness Calorie Calculator</a></p>
+                    <p> <a href="FitnessCalorie.jsp">Fitness Calorie Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
-                    <p><a href="">BMI Calculator</a></p>
+                    <p><a href="BMIcal.jsp">BMI Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
@@ -286,7 +286,7 @@
                 </div>
                 <div class="col">
                     <div class="icon d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
-                    <p><a href="">BMI Calculator</a></p>
+                    <p><a href="BPCalculator.jsp">BP Calculator</a></p>
                 </div>
                 <div class="col">
                     <div class="icon  d-flex fs-3 "><i class="fa-solid fa-tape" style="color: #eff1f6;"></i></div>
