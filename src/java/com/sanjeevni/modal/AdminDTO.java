@@ -27,6 +27,7 @@ public class AdminDTO {
     public boolean login(AdminDAO dao) {
         boolean b = false;
         Connection con = GetConnection.getConnection();
+        System.out.println("sd fansgnasjn");
         String sql = "Select * from adminCamp where email=?";
 
         try {

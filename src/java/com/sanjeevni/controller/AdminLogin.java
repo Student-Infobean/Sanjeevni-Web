@@ -59,7 +59,7 @@ public class AdminLogin extends HttpServlet {
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);
                 System.out.println("sucess go gya");
-                response.sendRedirect("../view/AdmindashBoard.jsp");
+                response.sendRedirect("../view/AdminCount.jsp");
             } else {
                 session.setAttribute("message", "Invalid Email & Password");
                 response.sendRedirect("../view/AdminLogin.jsp");

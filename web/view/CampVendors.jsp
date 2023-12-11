@@ -1,6 +1,6 @@
 <%-- 
     Document   : CampVendors
-    Created on : Dec 2, 2023, 8:28:22 PM
+    Created on : Dec 2, 2023, 8:28:22?PM
     Author     : Lenovo
 --%>
 
@@ -9,6 +9,8 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="com.sanjeevni.modal.*" %>
 <%@ page import="jakarta.servlet.*" %>
+<%@ page import="java.util.stream.Collectors" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -199,51 +201,64 @@
         </tr>
        
             <%
-                       vendorDTO vdto = new vendorDTO();
-                       List<vendorDAO> vendor = vdto.vendorDetails();
-                       if(vendor!=null){
-                       for(vendorDAO c: vendor){
-                        vendorDAO vdao = c;
-            %>
-          
-        
-        <tr>
-                            <th><%= vdao.getVendorId()%></th>
-                            <td><%= vdao.getName()%></td>
-                            <td><%= vdao.getEmail()%></td>
-                            <td><%= vdao.getPhone()%></td>
-                            <td><%= vdao.getAddress()%></td>
-             <td>
-                     <form  action="..//CampaignView">
-                        <input type="hidden"  value="<%= vdao.getVendorId() %>" name="deleteVendor">
-                       <!-- Button trigger modal -->
-                       <button  class="btn btn-outline-danger"  value="vendordelete" name="showcampaign">
-                      Delete
-                    </button>
+    
+        vendorDTO vdto = new vendorDTO();
+        List<vendorDAO> vendorList = vdto.vendorDetails();
 
-<!-- Modal -->
-                    
+        // Check if a search parameter is provided
+        String searchName = request.getParameter("searchName");
+        if (searchName != null && !searchName.isEmpty()) {
+            // Filter the vendorList based on the search parameter
+            vendorList = vendorList.stream()
+                    .filter(v -> v.getName().toLowerCase().contains(searchName.toLowerCase()))
+                    .collect(Collectors.toList());
+        }
+
+        if (vendorList != null) {
+            // Sort the list by name
+            Collections.sort(vendorList, Comparator.comparing(vendorDAO::getName));
+%>
+
+<table class="table w-100 table table-hover table-bordered border">
+    <thead>
+        <!-- Table header here -->
+    </thead>
+    <tbody>
+        <% for (vendorDAO vdao : vendorList) { %>
+            <tr>
+                <th><%= vdao.getVendorId() %></th>
+                <td><%= vdao.getName() %></td>
+                <td><%= vdao.getEmail() %></td>
+                <td><%= vdao.getPhone() %></td>
+                <td><%= vdao.getAddress() %></td>
+                <td>
+                    <form action="..//CampaignView">
+                        <input type="hidden" value="<%= vdao.getVendorId() %>" name="deleteVendor">
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-outline-danger" value="vendordelete" name="showcampaign">
+                            Delete
+                        </button>
+                        <!-- Modal -->
                     </form>
-             </td>
-             
+                </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
 
-        </tr>
-        <%
-            } 
-        %>
-    </table>
-    <%
-                }
-                // Set data in the session if needed
-                // session.setAttribute("id", id); // You can set other session attributes here
-        }
-        else
-        {
-            response.sendRedirect("AdminLogin.jsp");
-        }
-        
+<form action="CampVendors.jsp" method="get">
+    <label for="searchName">Search by Name:</label>
+    <input type="text" id="searchName" name="searchName">
+    <button type="submit" class="btn btn-secondary">Search</button>
+</form>
 
-    %>
+<%
+        }
+    } else {
+        response.sendRedirect("AdminLogin.jsp");
+    }
+%>
+
  
       </div>        
     </main>

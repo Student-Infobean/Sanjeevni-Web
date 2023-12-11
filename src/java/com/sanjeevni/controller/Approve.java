@@ -69,7 +69,7 @@ public class Approve extends HttpServlet {
                                     session.setAttribute("obj", vdao);
                                     System.out.println("update go gya");
                                     session.setAttribute("message","Confirmation sent");
-                                    response.sendRedirect("../view/AdmindashBoard.jsp");
+                                    response.sendRedirect("../view/Approve.jsp");
                                 }
                     
 
@@ -78,7 +78,7 @@ public class Approve extends HttpServlet {
                 }
                     else{
                         session.setAttribute("message", "NetWork Error");
-                        response.sendRedirect("../view/AdmindashBoard.jsp");
+                        response.sendRedirect("../view/Approve.jsp");
                     }
                 
             }else if(process.equals("delete")){
@@ -92,7 +92,7 @@ public class Approve extends HttpServlet {
                 session.setAttribute("size",vdao.size());
                 session.setAttribute("obj", vdao);
                 System.out.println("delete go gya");
-                response.sendRedirect("../view/AdmindashBoard.jsp");
+                response.sendRedirect("../view/Approve.jsp");
                 }
             }
            
