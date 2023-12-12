@@ -5,6 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.vendor.model.*"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +20,22 @@
     <link rel="stylesheet" href="css/upcoming.css">
 </head>
 <body>
+     <%
+         CampaignDTO cdto=new CampaignDTO();
+List<CampaignDAO> campaigns= cdto.getAllCampaigns();
+        String search=request.getParameter("search");
+        if(search!=null&&search!=""){
+        cdto=new CampaignDTO();
+        campaigns= cdto.searchByName(search);
+            }
+        %>
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
           <img src="images/logo.png" alt="" width="320">
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12  ">
           <form class="d-flex">
-            <input class="form-control me-2 my-4 border border-primary" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2 my-4 border border-primary"  type="search" name="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-primary my-4" type="submit">Search</button>
           </form>
           
@@ -253,6 +266,27 @@
         </div>
       </div>
     </section>
+    <%if (!campaigns.isEmpty()) {%>
+<div class="row row-cols-2 row-cols-md-4 mt-5 ms-2 me-2 g-4">   
+    <%for(CampaignDAO c : campaigns) {%>
+    <div class="col">
+    <div class="card">
+        <img src="images/<%=c.getImage()%>"style="height: 300px"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%=c.getName()%></h5>
+        <p class="card-text"><%=c.getCampaign_Date()%></p>
+        <p class="card-text"><%=c.getAddress()%></p>
+       
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><%=c.getEmail()%></small>
+      </div>
+    </div>
+  </div>
+    <%}%>
+</div>
+<%}%>
+   
     <section>
       <div class="container mt-5">
         <div class="row ms-5">

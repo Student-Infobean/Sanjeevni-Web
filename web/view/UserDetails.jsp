@@ -51,6 +51,37 @@
             {
                 color: #FFC107;
             }
+            
+    .background {
+    animation-name: fadeIn, rotate;
+    animation-duration: 5s, 360s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: linear, linear;
+    -webkit-animation-name: fadeIn, rotate;
+    -webkit-animation-duration: 5s, 360s;
+    -webkit-animation-iteration-count: 1, infinite;
+    -webkit-animation-timing-function: linear, linear;
+    -moz-animation-name: fadeIn, rotate;
+    -moz-animation-duration: 5s, 360s;
+    -moz-animation-iteration-count: 1, infinite;
+    -moz-animation-timing-function: linear, linear;
+}
+@media (max-width: 1260px){
+ .background {
+    opacity: .3;
+}
+}
+section.home-top .background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
 
 
         </style>
@@ -182,8 +213,10 @@
             </ul>-->
         </aside>
         <main id="main" class="main">
+            
+            
             <div class="container mt-5">
-
+            <div class="background" style="background-image:url(/images/binary-eye@2x.png)"></div>
                 <center><h2 style="margin: 40px 0px; color: #FFC107;">Campaign Details</h2></center>
                 <table class="table w-100 table table-hover table-bordered border" align="center" >
                     <table class='table table-bodered table-hover table-responsive'>
@@ -261,8 +294,8 @@
                         }
         
 
-                    %>
-
+                  %>
+                  
             </div>        
         </main>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -505,7 +505,7 @@ body {
                   <div class="gender">
                       <input onkeyup="validateGender()"  type="radio" id="gender" value="male" name="gender" checked />
                     <label for="check-male">male</label>
-                    <snap id="genderDisplay" style="color:red"></snap>
+                    <span id="genderDisplay" style="color:red"></span>
                   </div>
                   <div class="gender">
                     <input type="radio" id="gendere" value="female" name="gender" />

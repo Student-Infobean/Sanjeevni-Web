@@ -105,7 +105,7 @@ public class CampaignView extends HttpServlet {
             else if(name.equalsIgnoreCase("count")){
                 CampaignViewDTO cdto = new CampaignViewDTO();
                 vendorDTO udto=new vendorDTO();
-                 UserDTO dto=new UserDTO();
+                UserDTO dto=new UserDTO();
                 int vendor = udto.getVendorRowCount();
                 int count  = cdto.getCampaignRowCount();
                 int User=dto.getUserRowCount();

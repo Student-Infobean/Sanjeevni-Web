@@ -202,7 +202,7 @@ public class UserDTO {
         }
         return b;
     }
-        public int getUserRowCount() {
+   public int getUserRowCount() {
     int rowCount = 0;
     Connection connection = GetConnection.getConnection();
 
@@ -217,15 +217,8 @@ public class UserDTO {
 
     } catch (SQLException e) {
         e.printStackTrace();
-    } finally {
-        try {
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-    }
+    } 
+    
 
     return rowCount;
 }

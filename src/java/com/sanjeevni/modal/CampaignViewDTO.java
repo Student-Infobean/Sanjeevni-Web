@@ -101,15 +101,8 @@ public class CampaignViewDTO {
 
     } catch (SQLException e) {
         e.printStackTrace();
-    } finally {
-        try {
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-    }
+    } 
+    
 
     return rowCount;
 }

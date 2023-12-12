@@ -25,7 +25,7 @@ public class vendorDTO {
         try {
             con = GetConnection.getConnection();
             if (con != null) {
-                String sql = "select * from vendorDetails";
+                String sql = "select * from vendordetls";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery();
 
@@ -55,7 +55,7 @@ public class vendorDTO {
         try {
             con = GetConnection.getConnection();
             if (con != null) {
-                String sql = "select * from vendorDetails where approval=0";
+                String sql = "select * from vendordetls where approval=0";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery();
 
@@ -86,7 +86,7 @@ public class vendorDTO {
         try {
             con = GetConnection.getConnection();
             if (con != null) {
-                String sql = "DELETE FROM vendorDetails WHERE vendor_id=? ";
+                String sql = "DELETE FROM vendordetls WHERE vendor_id=? ";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ps.setInt(1, id);
                 int e = ps.executeUpdate();
@@ -108,7 +108,7 @@ public class vendorDTO {
     try {
         con = GetConnection.getConnection();
         if (con != null) {
-            String updateSql = "UPDATE vendorDetails SET approval=1 WHERE vendor_id=?";
+            String updateSql = "UPDATE vendordetls SET approval=1 WHERE vendor_id=?";
             PreparedStatement updatePs = con.prepareStatement(updateSql);
             
             updatePs.setInt(1, id);
@@ -139,7 +139,7 @@ public class vendorDTO {
         int rowCount = 0;
         Connection connection = GetConnection.getConnection();
 
-        String countSql = "SELECT COUNT(*) AS rowCount FROM vendordetails";
+        String countSql = "SELECT COUNT(*) AS rowCount FROM vendordetls";
 
         try (PreparedStatement countPs = connection.prepareStatement(countSql); ResultSet resultSet = countPs.executeQuery()) {
 
@@ -149,16 +149,7 @@ public class vendorDTO {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        }
-
+        } 
         return rowCount;
     }
 }
