@@ -9,6 +9,9 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="com.vendor.model.*" %>
 <%@ page import="jakarta.servlet.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.text.ParseException" %>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -187,7 +190,14 @@
 
         <center><h2 style="margin: 40px 0px; color: #FFC107;">Bookings </h2></center>
         <table class="table w-100 table table-hover table-bordered border" align="center" >
-          <table class='table table-bodered table-hover table-responsive'>
+             <label for="campaignType">Select Campaign Type:</label>
+                <select id="campaignType" onchange="filterCampaigns(this.value)">
+                    <option value="all">All Campaigns</option>
+                    <option value="past">Past Campaigns</option>
+                    <option value="present">Present Campaigns</option>
+                    <option value="upcoming">Upcoming Campaigns</option>
+                </select>
+          <table class='table table-bodered table-hover table-responsive'id="camp">
         <tr>
             <th>Name</th>
             <th>Email</th>
@@ -199,8 +209,26 @@
         <%
             ArrayList <CampaignDAO> camp = (ArrayList<CampaignDAO>)session.getAttribute("campaign");
             if(camp!=null){
+            Date currentDate = new Date();
             for(CampaignDAO c:camp){
                 CampaignDAO cdao = c;
+                boolean displayCampaign = false;
+            String selectedOption = request.getParameter("campaignType");
+
+            if (selectedOption == null || selectedOption.equals("all")) {
+                displayCampaign = true;
+            } else {
+                Date campaignDate = cdao.getCampaign_Date();
+                if (selectedOption.equals("past") && campaignDate.before(currentDate)) {
+                    displayCampaign = true;
+                } else if (selectedOption.equals("present") && !campaignDate.before(currentDate) && !campaignDate.after(currentDate)) {
+                    displayCampaign = true;
+                } else if (selectedOption.equals("upcoming") && campaignDate.after(currentDate)) {
+                    displayCampaign = true;
+                }
+            }
+
+                            if (displayCampaign) {
         %>
         <tr>
             <td><%= cdao.getName() %></td>
@@ -225,7 +253,7 @@
 
         </tr>
         <%
-            } 
+            } }
         %>
     </table>
     <%
@@ -240,13 +268,22 @@
         
 
     %>
-    
+   
+        
             
             
         
         
       </div>        
     </main>
+    
+    <script>
+            // Add JavaScript function to handle filtering based on the selected option
+            function filterCampaigns(selectedOption) {
+                // Redirect to the same page with the selected option as a parameter
+                window.location.href = 'AdmindashBoard.jsp?campaignType=' + selectedOption;
+            }
+        </script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

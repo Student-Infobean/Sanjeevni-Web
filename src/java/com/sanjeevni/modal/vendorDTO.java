@@ -25,7 +25,7 @@ public class vendorDTO {
         try {
             con = GetConnection.getConnection();
             if (con != null) {
-                String sql = "select * from vendorDetails";
+                String sql = "select * from vendorDetls where approval=1";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery();
 
