@@ -1,6 +1,6 @@
 <%-- 
     Document   : UserDetails
-    Created on : Dec 2, 2023, 8:53:34 PM
+    Created on : Dec 2, 2023, 8:53:34?PM
     Author     : Lenovo
 --%>
 
@@ -100,7 +100,21 @@ section.home-top .background {
                 <i class="bi bi-list toggle-sidebar-btn"></i>
                 <a style="float:right;margin-left: 1100px"  href="../LogOut"><i class="fas fa-sign-out fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-        <a href="url"><i class="fa-solid fa-bell fa-2xl"></i></a>
+        <a href="Approve.jsp"><i class="fa-solid fa-bell fa-2xl position-relative fs-1 ">
+            
+  
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">
+                 <%
+                     Integer size = (Integer)session.getAttribute("size");
+                     if(size!=null){
+                 %><%= size%>
+                    <%}else{%>
+                      0
+                      <%}%>
+                  
+                </span>
+
+            </i></a>
             </div>
             <nav class="header-nav ms-auto">
                 <ul class="d-flex align-items-center">

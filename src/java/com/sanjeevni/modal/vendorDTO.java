@@ -25,7 +25,11 @@ public class vendorDTO {
         try {
             con = GetConnection.getConnection();
             if (con != null) {
+<<<<<<< HEAD
                 String sql = "select * from vendordetls";
+=======
+                String sql = "select * from vendorDetls where approval=1";
+>>>>>>> 44972e6841e31f614b4f03928cfa8cf7895c98f4
                 PreparedStatement ps = con.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery();
 

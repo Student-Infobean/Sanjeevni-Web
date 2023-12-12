@@ -71,7 +71,21 @@
                 <i class="bi bi-list toggle-sidebar-btn"></i>
                 <a style="float:right;margin-left: 1100px"  href="../LogOut"><i class="fas fa-sign-out fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-                <a href="url"><i class="fa-solid fa-bell fa-2xl"></i></a>
+                <a href="Approve.jsp"><i class="fa-solid fa-bell fa-2xl position-relative fs-1 ">
+            
+  
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">
+                 <%
+                     Integer size = (Integer)session.getAttribute("size");
+                     if(size!=null){
+                 %><%= size%>
+                    <%}else{%>
+                      0
+                      <%}%>
+                  
+                </span>
+
+            </i></a>
             </div>
             <nav class="header-nav ms-auto">
                 <ul class="d-flex align-items-center">
@@ -185,9 +199,13 @@
         </aside>
         <%
                             
-          int count  = (Integer)(session.getAttribute("count"));
-          int vendor  = (Integer)(session.getAttribute("vendor"));
-          int User  = (Integer)(session.getAttribute("User"));
+          Integer countAttribute  = (Integer)(session.getAttribute("count"));
+          Integer vendorAttribute  = (Integer)(session.getAttribute("vendor"));
+          Integer userAttribute  = (Integer)(session.getAttribute("User"));
+          Integer count = (countAttribute != null) ? countAttribute.intValue() : 0;
+          Integer vendor = (vendorAttribute != null) ? vendorAttribute.intValue() : 0;
+          Integer user = (userAttribute != null) ? userAttribute.intValue() : 0;
+
         %>
         <main id="main" class="main">
             <div class="container mt-5">
@@ -220,7 +238,7 @@
                                 <i id="Icon" class="fa-solid fa-users"></i>
                                 <h2 class="card-title fs-5 fw-bold"><center>Total Users</center></h2>
                                 <h1 class="card-text ">
-                                    <center> <strong><%= User %></strong></center></h1>
+                                    <center> <strong><%= user %></strong></center></h1>
 
                             </div>
                         </div>
